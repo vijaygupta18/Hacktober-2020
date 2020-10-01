@@ -1,0 +1,60 @@
+body {
+    background-color: rgb(255, 84, 84);
+    color: black;
+    text-transform: uppercase;
+    font: 20px/30px "Bungee", Helvetica, Arial, sans-serif;
+  }
+  #reqPage {
+    border: 2px solid black;
+    margin: 50px;
+    text-align: center;
+  }
+  header {
+    font-size: 35px;
+    line-height: normal;
+    font-family: "Bungee Shade", cursive;
+    color: rgb(36, 36, 36);
+  }
+  h4 #clock {
+    font-size: 55px;
+    font-family: "Times New Roman", Times, serif;
+  }
+  #catImg {
+    padding: 30px;
+    max-width:30em
+  }
+  blockquote {
+    font: 2em/1em "Open Sans", sans-serif; 
+    /* 2em/1em == font-size: 2em; line-height: 1em; */
+    -webkit-text-stroke: 1px black;
+    text-shadow: 2px 2px #000;
+    margin: -80px 0 60px 0;
+    color: #fff;
+  }
+  blockquote:before {
+    content: '"';
+  }
+  blockquote:after {
+    content: '"';
+  }
+  #wakeupTimeSelector,
+  #lunchTimeSelector,
+  #napTimeSelector {
+    padding: 18px;
+    margin: 10px;
+    font-size: 20px;
+    background-color: cornflowerblue;
+  }
+  #partyTimeButton {
+    background-color: #222;
+    width: 360px;
+    font-family: "Bungee", cursive;
+    font-size: 30px;
+    color: rgb(255, 234, 208);
+    border: none;
+    border-radius: 5px;
+    padding: 10px 0;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  
