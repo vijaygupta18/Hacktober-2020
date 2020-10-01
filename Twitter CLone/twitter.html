@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Twitter Clone</title>
+        <link href="css/font-awesome-4.6.3/css/font-awesome.css" rel="stylesheet">
+        <link href="css/custom.css" rel="stylesheet">
+        <link rel="icon" href="images/favicon.png">
+    </head>
+    <body>
+        <div>
+           <!--nav-bar-->  
+            <div>
+                <div style="padding-left:150px;padding-top:2px">
+                    <ul>
+                        <li class="bold-txt"><a href=#><i class="fa fa-home"></i>  Home</a></li>
+                        <li class="bold-txt"><a href=#><i class="fa fa-bolt"></i>  Moments</a></li>
+                        <li class="bold-txt"><a href=#><i class="fa fa-bell-o"></i>  Notifications</a></li>
+                        <li class="bold-txt"><a href=#><i class="fa fa-envelope-o"></i>  Messages</a></li>
+                        <li><i class="fa fa-twitter fa-lg pad" style="color:#1DA1F2;padding-top:18px;"></i></li>
+                    </ul>
+                </div>
+                <!--tweetbtn-->
+                <div align="center">
+                    <button type="submit" class="tweet-btn bold-txt top-tweet">Tweet</button>
+                </div>
+                <!--end tweetbtn-->
+                <!--profile-img-->
+                <div align="right" class="tooltip">
+                    <img src="images/download.jpg" alt="Profile and Settings" height=40px class="pro-img" >
+                    <span class="tooltip-txt">Profile and Settings</span>
+                </div>
+                <!--search-bar-->
+                <div>
+                    <form>
+                        <div class="search-bar">
+                            <input type="text" placeholder="Search Twitter"><button type="submit" class="submit-btn"><i class="fa fa-search fa-lg"></i></button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+           <!--navbar-ends-->
+           <!--avatar-btn-->
+            <div align="left" style="padding-right:520px">
+                    <hr class="hr-line">
+                <button type="submit" class="avatar-btn"><img src="images/avatar.png"></button>
+            </div>
+            <p>
+               <img src="images/bg1.jpg" style="height:193px;float:left">
+            </p><br>
+            <p style="margin-top:220px;margin-left:470px;font-family:'Segoe UI',Arial,sans-serif;color:rgb(120,120,120);cursor:pointer">
+                Following &emsp; Lists &emsp; Moments
+            </p>
+            <!--2nd nav-bar-->
+            <div style="margin-left:470px;margin-top:-34px;font-size:20px">
+                <ul class="bold-txt">
+                    <li style="padding-left:12px;" ><a href=# class="pad-cor" style="font-size:18px;">9</a></li>
+                    <li style="padding-left:35px"><a href=# class="pad-cor" style="font-size:18px;">0</a></li>
+                    <li style="padding-left:30px"><a href=# class="pad-cor" style="font-size:18px;">0</a></li>
+                </ul>
+                <button type="submit" class="profile-btn bold-txt" style="margin-right:-30px">Edit Profile</button>
+            </div>
+            <hr width:100px; style="margin-left:0px;margin-bottom:-1px;">
+            <!--main-content-->
+            <div class="grid-container">
+                <!--column 1-->
+                <div class="grid-item" align="center">
+                    <span class="proname">Karan Maurya</span><br>
+                    <span class="proid">@KaranMa42415200</span><br><br>
+                    <span class="join-dt"><i class="fa fa-wpforms"></i>  Joined July 2018</span>
+                </div>
+                <!--column 2-->
+                <div class="grid-item" align="left" style="margin-left:40px;margin-right:150px;">
+                    <span class="content-txt">Send your first Tweet</span><br><br>
+                    <span class="sup-txt">We've got your first Tweet ready to go. The hashtag #myfirstTweet will help others</span> <br>
+                    <span class="sup-txt">find and chat with you.</span><br><br>
+                    <!--first-tweet1-->
+                    <div class="first-tweet">
+                        <span align="left"><img src="images/default_profile_bigger.png" width=55px; class="tweet-img"></span><br>
+                        <span style="padding-left:20px;" class="pro-txt">Karan Maurya</span> 
+                        <span class="fti">@KaranMa42415200</span><br>
+                        <span style="padding-left:20px;" class="ftc">Just setting up my Twitter.<br></span>
+                        <span style="padding-left:85px;" class="ftl">#myfirstTweet</span><br> 
+                    </div>
+                    <!--first-tweet-btn-->
+                    <div  style="padding:8px 170px 8px 8px" align="center" id="ftb">
+                        <button type="submit" class="tweet-btn bold-txt">Tweet</button>
+                    </div><br>
+                    <!--first-tweet2-->
+                    <div class="first-tweet">
+                        <span align="left"><img src="images/default_profile_bigger.png" width=55px; class="tweet-img1"></span><br>
+                        <span style="margin-left:90px;" class="pro-txt">Karan Maurya</span> 
+                        <span class="fti">@KaranMa42415200</span><br>
+                        <span style="padding-left:90px;" class="ftc">Hello Twitter!<br></span>
+                        <span style="padding-left:85px;" class="ftl">#myfirstTweet</span><br>
+                    </div>
+                    <!--second-tweet-btn-->
+                    <div  style="padding:8px 170px 8px 8px" align="center" id="stb">
+                        <button type="submit" class="tweet-btn bold-txt">Tweet</button>
+                    </div>
+                    <!--custom-tweet-->
+                    <br>
+                    <span class="fti" style="font-family:'Segoe UI',Arial,sans-serif;">Or write your own</span>
+                    <br>
+                    <div class="custom-tweet">
+                        <div align="center">
+                            <button type="submit" class="tweet-btn bold-txt bottom-tweet">Tweet</button>
+                        </div>
+                        <div class="custom-writer">
+                            <input type="text" placeholder="What's happening?">
+                        </div>
+                        <button type="submit" class="img-tag"><i class="fa fa-photo fa-lg"></i></button>
+                        <button type="submit" class="img-tag"><i class="fa fa-file-movie-o fa-lg"></i></button>
+                        <button type="submit" class="img-tag"><i class="fa fa-bar-chart fa-lg"></i></button>
+                        <button type="submit" class="img-tag"><i class="fa fa-map-marker fa-lg"></i></button>
+                    </div>
+                </div>
+                <!--column 3-->
+                <div class="grid-item" align="left">
+                    <div class="follow-sug">
+                        <span class="follow-head">Who to follow</span> . 
+                        <span class="follow-link">Refresh</span> .
+                        <span class="follow-link">View all</span><br><br>
+                        <!--sug 1-->
+                        <div>
+                            <span class="sug-name">PMO India</span>
+                            <img class="pmo-img" src="images/pmo.jpg">
+                            <i class="fa fa-check-circle blue-ico"></i>
+                            <span class="sug-id">@PMOIndia &ensp; &ensp;x</span>
+                            <button type="submit" class="follow-btn">Follow</button><br>
+                            <hr width=270px; color=#f0f0f0>
+                        </div>
+                        <!--sug 2-->
+                        <div>
+                            <span class="sug-name">Arun Jaitley</span>
+                            <i class="fa fa-check-circle blue-ico"></i>
+                            <span class="sug-id">@arunjaitley &ensp;x</span>
+                            <img src="images/arun.png" class="arun-img">
+                            <button type="submit" class="follow-btn">Follow</button><br>
+                            <hr width=270px; color=#f0f0f0>
+                        </div>
+                        <!--sug 3-->
+                        <div>
+                            <span class="sug-name">Amit Shah</span>
+                            <img class="amit-img" src="images/amit.jpg">
+                            <i class="fa fa-check-circle blue-ico"></i>
+                            <span class="sug-id">@amitshah &ensp; &ensp; x</span>
+                            <button type="submit" class="follow-btn">Follow</button><br>
+                            <hr width=270px; color=#f0f0f0>
+                        </div>
+                        <i class="fa fa-users blue-ico" style="padding-left:6px;padding-right:6px;"></i>
+                        <span class="blue-txt">Find people you know</span>
+                    </div><br>
+                    <!--trends-->
+                    <div class="trends" style="padding:20px;">
+                        <!--head-->
+                        <span class="follow-head">Trends for you </span>.
+                        <span class="follow-link">Change</span><br><br>
+                        <!--content-->
+                        <span class="trend-topic">#CaptAcquitted</span><br>
+                        <span class="tweets">1,696 Tweets</span><br><br>
+                        <span class="trend-topic">#Croatia</span><br>
+                        <span class="tweets">11.2K Tweets</span><br><br>
+                        <span class="trend-topic">#TrueGuruStRamRahim</span><br>
+                        <span class="tweets">28.6K Tweets</span><br><br>
+                        <span class="trend-topic">#KargilVijayDiwas</span><br>
+                        <span class="tweets">41.7K Tweets</span><br><br>
+                        <span class="trend-topic">#GhazibadsKhoda</span><br>
+                        <span class="tweets">10.2K Tweets</span><br><br>
+                        <span class="trend-topic">#BharatAneNenu100Days</span><br>
+                        <span class="tweets">9,260 Tweets</span><br><br>
+                        <span class="trend-topic">#IAALeadershipAwards</span><br>
+                        <span class="tweets">4,630 Tweets</span><br><br>
+                        <span class="trend-topic">#SaadhiMadham</span><br>
+                        <span class="tweets">1,449 Tweets</span><br><br>
+                        <span class="trend-topic">#RILResults</span><br>
+                        <span class="tweets">3,105 Tweets</span><br><br>
+                        <span class="trend-topic">#HappyBirthdayDhanush</span><br>
+                        <span class="tweets">62.1K Tweets</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>    
