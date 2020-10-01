@@ -1,6 +1,6 @@
 # Hacktober-2020
 
-# If you liked this give a star 🌟.
+## If you liked this give a star 🌟.Get your projects merged quickly on valid pull requests.
 ## Happy coding
 
 - Anyone can add any type of html-css web page depends on you.
