@@ -42,6 +42,7 @@ input[type="text"] {
     z-index: -1;
     cursor: pointer;
     background-color: grey;
+    color: white;
 }
 
 ::placeholder {
