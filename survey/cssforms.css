@@ -1,0 +1,84 @@
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    background: var(--color-darkblue);
+    background-image: linear-gradient( 115deg, rgba(58, 58, 158, 0.8), rgba(136, 136, 206, 0.7) ), url(https://cdn.freecodecamp.org/testable-projects-fcc/images/survey-form-background.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+body{
+   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Helvetica Neue", Arial, sans-serif;
+   font-size: 20px;
+   line-height: 1.4;
+   font-weight:400;
+   color:white;
+}
+#main{
+   text-align: center;
+   display: block;
+
+}
+#title,{
+   display: block;
+   font-size: 25px;
+}
+#description{
+   display: block;
+   font-size: 19px;
+   margin-bottom: 50px;
+   margin-top: -20px;
+   position: relative;
+}
+#survey-form{
+	background-color:rgba(27,27,50,0.8);
+	display: block;
+   margin-right:20%;
+   margin-left: 20%;
+   text-align: left;
+   color: white;
+   border-radius: 10px;
+   padding: 15px;
+
+}
+.formgroup{
+   opacity: 1;
+   font-size: 22px;
+   padding: 10px;
+   display: block;
+}
+#name,#email,#number,#dropdown{
+   width: 100%;
+   height: 30px;
+   border-radius: 3px;
+   display: block;
+   padding: 5px;
+   background-color: white;
+   border:3px solid #ced4da;
+   font-size: 15px;
+
+}
+#text{
+   min-height: 120px;
+   width: 100%;
+   resize: vertical;
+}
+#submit{
+   display: block;
+    width: 100%;
+    color: white;
+    padding: 0.75rem;
+    background: var(--color-green);
+    border-radius: 5px;
+    cursor: pointer;
+}
+#submit:hover{
+  background-color: black;
+  color: white;
+}
+
