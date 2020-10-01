@@ -3,9 +3,11 @@
 # If you liked this give a star 🌟.
 ## Happy coding
 
-Anyone can add any type of html-css web page depends on you.
-You can add any small projects you have made.
-You can add in any programming language.
+- Anyone can add any type of html-css web page depends on you.
+
+- You can add any small projects you have made.
+
+- You can add programs too, in any programming language.
 
 
 
