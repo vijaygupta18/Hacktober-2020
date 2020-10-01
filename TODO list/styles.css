@@ -1,0 +1,77 @@
+body {
+    align-items: center;
+    background-color: whitesmoke;
+}
+
+.container {
+    padding: 150px;
+    margin: 0 auto;
+    min-width: 500px;
+    width: 45%;
+    text-align: left;
+    color: grey;
+    font-weight: bold;
+    font-family: monospace;
+}
+
+form {
+    outline: 0;
+    height: 40px;
+    margin-top: 5%;
+    background-color: white;
+    border: 3px solid grey;
+}
+
+input[type="text"] {
+    outline: 0;
+    width: 55%;
+    height: 32px;
+    border: none;
+    font-size: 20px;
+    font-weight: normal;
+    padding-left: 10px;
+}
+
+.add {
+    outline: 0;
+    float: right;
+    width: 35%;
+    height: 40px;
+    font-size: 16px;
+    font-family: monospace;
+    z-index: -1;
+    cursor: pointer;
+    background-color: grey;
+}
+
+::placeholder {
+    padding-top: 8px;
+    padding: 5px;
+    padding-left: 8px;
+    background-color: white;
+    font-family: monospace;
+}
+
+ul {
+    padding: 0;
+    font-size: large;
+    text-align: left;
+    list-style: none;
+}
+
+hr {
+    margin: 10px;
+}
+
+input[type="checkbox"] {
+    width: 20px;
+}
+
+.remove {
+    float: right;
+    cursor: pointer;
+}
+
+.completed {
+    text-decoration: line-through;
+}
