@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="./design.css"> -->
+    <script src="./js/utils.js"></script>
+    <script src="./js/item.js"></script>
+    <script src="./js/itemoperations.js"></script>
+    <script src="./js/controller.js"></script>
+    <script src="./js/validations.js"></script>
+</head>
+
+<body>
+    <div class='container'>
+        <h1 class='alert-success text-center'>Student Elective Course</h1>
+            <div class='form-group'>
+                <label for="">Roll Number</label>
+                <label id='id' class='form-control'>
+            </div>
+
+            <div class='form-group'>
+                <label for="">Student Name</label>
+                <input id='student_name' class='form-control' type="text">
+            </div>
+
+            <div class='form-group'>
+                <label for="">Gender</label> <br/>
+                <input type="radio" id="M" value="M" onchange="gender.value = value">
+                <label for="Male">Male</label>
+                <input type="radio" id="F" value="F" onchange="gender.value = value">
+                <label for="Female">Female</label>
+                <input id="gender" class='form-control' value="F"  hidden>
+            </div>
+
+            <div class='form-group'>
+                <label for="">Date of Birth</label>
+                <input type="date" id="dob" class='form-control'>
+            </div>
+
+            <div class='form-group'>
+                <label for="">E-Mail</label>
+                <input type="email" id="mail" class='form-control'>
+            </div>
+
+            <div class='form-group'>
+                <label for="">Phone Number</label>
+                <input type="text" id="phone" pattern="[0-9]{10}" title="Phone number should be 10 digits long, containing only digits between 0-9." class='form-control'>
+            </div>
+
+            <div class='form-group'>
+                <label for="">Branch</label>
+                <select id="branch" class='form-control'>
+                    <option value="CSE">CSE</option>
+                    <option value="ECE">ECE</option>
+                    <option value="CV">CV</option>
+                    <option value="ME">ME</option>
+                </select>
+            </div>
+
+            <div class='form-group'>
+                <!-- <label for="">Open Elective</label><br>
+                <input type="checkbox" name="v1" value="Web Development" onclick="oe.value = value"> Web Development<br>
+                <input type="checkbox" name="v2" value="UI/UX"> UI/UX<br>
+                <input type="checkbox" name="v3" value="JAVA"> JAVA<br>
+                <input type="checkbox" name="v4" value="Android Development"> Android Development<br> -->
+            </div>
+            <br>
+
+
+            <div class='form-group'>
+                <button id='add' class='btn btn-primary'>Add</button>
+                <button id='remove' class='btn btn-danger'>Delete</button >
+                <button id='update' class='btn btn-secondary'>Update</button>
+            </div>
+
+        <h3>Total Records <span id='total'></span> Mark Records <span id='mark'></span> UnMark Records <span id='unmark'></span></h3>
+        <table class='table table-bordered'>
+            <thead class='thead-dark'>
+                <tr>
+                    <th>Roll Number</th>
+                    <th>Student Name</th>
+                    <th>Gender</th>
+                    <th>DOB</th>
+                    <th>EMAIL</th>
+                    <th>Phone Number</th>
+                    <th>Branch</th>
+                    <!-- <th>Open Elective</th> -->
+                    <th>Operations</th>
+                </tr>
+            </thead>
+            <tbody id='items'>
+
+            </tbody>
+        </table>
+    </div>
+</body>
+
+</html>
