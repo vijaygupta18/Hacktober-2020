@@ -9,10 +9,13 @@
 
 - You can add programs too, in any programming language.
 
+- Do not add anyone else's work in this repository.It will leads to failure of your pull request.
+
 
 
 
 Anybody can make contribution.
+
 Steps To Generate PR(Pull Request)
 
 # Fork this repository
@@ -24,7 +27,7 @@ Fork this repository by clicking on the fork button on the top of this page. Thi
 Now clone the forked repository to your system. Go to your GitHub account, open the forked repository, click on the code button and then clone the repository.
 
 *if you want to use the terminal, use the following commands*
-after you fork the repository , open the terminal
+after you fork the repository , open the terminal type the given command
 ```
 git clone https://github.com/{your-github-username}/Hacktober-2020.git
 
