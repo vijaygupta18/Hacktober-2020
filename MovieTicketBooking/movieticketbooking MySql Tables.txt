@@ -1,0 +1,49 @@
+create database movieticket;
+use movieticket;
+
+create table seats1(seat int(2) primary key,A varchar(10),B  varchar(10),C  varchar(10), D varchar(10),E  varchar(10));
+
+insert into seats1(seat) values(1);
+insert into seats1(seat) values(2);
+insert into seats1(seat) values(3);
+insert into seats1(seat) values(4);
+insert into seats1(seat) values(5);
+update seats1 set A="A", B="A",C="A",D="A", E="A";
+
+create table seats2(seat int(2) primary key,A varchar(10),B  varchar(10),C  varchar(10), D varchar(10),E  varchar(10));
+
+insert into seats2(seat) values(1);
+insert into seats2(seat) values(2);
+insert into seats2(seat) values(3);
+insert into seats2(seat) values(4);
+insert into seats2(seat) values(5);
+update seats2 set A="A", B="A",C="A",D="A", E="A";
+
+create table seats3(seat int(2) primary key,A varchar(10),B  varchar(10),C  varchar(10), D varchar(10),E  varchar(10));
+
+insert into seats3(seat) values(1);
+insert into seats3(seat) values(2);
+insert into seats3(seat) values(3);
+insert into seats3(seat) values(4);
+insert into seats3(seat) values(5);
+update seats3 set A="A", B="A",C="A",D="A", E="A";
+
+create table payment
+(
+Booking_ID int(10) primary key,
+Date date, 
+Customer_Name varchar(30), 
+Phone_No varchar(13),
+Seat_Nos varchar(100),
+Movie varchar(30),
+Amount decimal(6,2),
+City varchar(20)
+);
+
+create table timings
+(
+Booking_ID int (10) primary key,
+Timings varchar(6) ,
+MovieName varchar(20),
+Language varchar(10)
+);
