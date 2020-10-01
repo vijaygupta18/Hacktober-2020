@@ -17,7 +17,7 @@
 function getQuote(){
   $.getJSON('https://api.forismatic.com/api/1.0/?method=getQuote&format=json&lang=en', function(response){
     $('#quote').text(response.quoteText+' - '+quoteAuthor);
-  }
+  });
 }
 $(getQuote);
 $('#new').on('click', getQuote);
