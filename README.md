@@ -21,7 +21,7 @@ Now clone the forked repository to your system. Go to your GitHub account, open 
 *if you want to use the terminal, use the following commands*
 after you fork the repository , open the terminal
 ```
-git clone https://github.com/{your-github-username}/Hacktoberfest2020-HTML-CSS-WEB.git
+git clone https://github.com/{your-github-username}/Hacktober-2020.git
 
 ```
 
