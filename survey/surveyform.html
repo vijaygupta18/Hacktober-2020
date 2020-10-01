@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>FCC:survey form</title>
+	<link rel="stylesheet" type="text/css" href="cssforms.css">
+</head>
+<body>
+	<div id="main">
+	<div >
+		<h1 id="title">SURVEY FORM</h1>
+	</div>
+	<div >
+		<p id="description">Thank you for taking the time to help us improve the platform</p>
+	</div>
+	<form id="survey-form">
+		<div class="formgroup">
+			<label id="name-label">Name</label><br>
+		<input type="text" id="name" name="name" placeholder="Enter your name" required="">
+	</div>
+	<div class="formgroup">
+		<label id="email-label">Email</label><br>
+		<input type="email" id="email" name="email" placeholder="Enter your Email" required="">
+	</div>
+	<div class="formgroup">
+		<label id="number-label">Age(optional)</label><br>
+		<input type="number" id="number" name="age" min="10" max="50" placeholder="Age">
+	</div>
+	<div class="formgroup">
+		<label>Which option best describes your current role?</label><br>
+		<select id="dropdown">
+			<option value="">choose option value</option>
+			<option value="">student</option>
+			<option value="">full time job</option>
+			<option value="">part time job</option>
+			<option value="">prefer not to say</option>
+			<option value="">others</option>
+		</select>
+	</div>
+	<div class="formgroup">
+		Would you recommend freeCodeCamp to a friend?<br>
+		<input type="radio" name="friend" value="Definitely" checked=""><label>Definitely</label><br>
+		<input type="radio" name="friend" value="maybe"><label >maybe</label><br>
+		<input type="radio" name="friend" value="not sure"><label>not sure</label>
+	</div>
+	<div class="formgroup">
+		<label>What is your favorite feature of freeCodeCamp?</label><br>
+		<select id="dropdown">
+			<option value="">choose option value</option>
+			<option value="">chalenges</option>
+			<option value="">community</option>
+			<option value="">open source</option>
+			<option value="">projects</option>
+		</select>
+	</div>
+	<div class="formgroup">
+		What would you like to see improved? (Check all that apply)<br>
+		<input type="checkbox" name="deep" value="front front-end"><label>front-end projects</label><br>
+		<input type="checkbox" name="deep" value="back-end"><label>back-end projects</label><br>
+		<input type="checkbox" name="deep" value="data"><label>data visualization</label><br>
+		<input type="checkbox" name="deep" value="challenges"><label>challenges</label><br>
+		<input type="checkbox" name="deep" value="open source"><label>open source community</label><br>
+		<input type="checkbox" name="deep" value="gitter"><label>gitter help rooms</label><br>
+		<input type="checkbox" name="deep" value="videos"><label>videos</label><br>
+		<input type="checkbox" name="deep" value="city"><label>city meetups</label><br>
+		<input type="checkbox" name="deep" value="wiki"><label>wiki</label><br>
+		<input type="checkbox" name="deep" value="forum"><label>forum</label><br>
+		<input type="checkbox" name="deep" value="Additiional"><label>Additiional courses</label><br>
+
+
+	</div>
+	<div class="formgroup">
+		<p>Any comments or suggestions?</p>
+		<textarea id="text" placeholder="enter your comments"></textarea>
+
+	</div>
+	<div class="formgroup">
+		<button type="submit" id="submit">submit</button>
+	</div>
+	</form>
+</div>
+<script type="text/javascript" src="form.js" language="javascript"></script>
+</body>
+</html>
