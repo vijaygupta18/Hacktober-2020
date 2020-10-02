@@ -12,7 +12,7 @@ def displayImage(img, title=None, size=(10, 10)):
     plt.axis('off')
     plt.show()
 
-# img should be a list of CV2 images
+# imgs should be a list of CV2 images
 # title: title of te plot
 def displayImages(imgs, titles=None, size=(15, 15)):
     num = len(imgs)
