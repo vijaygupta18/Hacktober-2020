@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To do List</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+     <!-- Compiled and minified CSS -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+     <link rel="stylesheet" href="./css/style.css">
+
+    
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+</head>
+
+
+<body>
+   
+    <div class="container main">
+        <h2 class="
+         head">
+            <span class="my">My</span>
+            <span class="to">To Do</span>
+            
+            <span class="list">List</span>
+           
+        </h1>
+       
+    <div class="row">
+        <div class="col s12 ">
+            <div class="card #fafafa grey lighten-5 main-box" id="main">
+                <div class="card-content ">
+                    <!-- <span class="card-title">
+                        Task List
+                    </span> -->
+                    <h5 id="task-title">
+                        Add a task
+                    </h5> 
+                    <form id="task-form">
+                        <div class="input-field col s12">
+                            <input type="text" name="task" id="task">
+                            <label for="task">New Task</label>
+                        </div>
+                        <input id="addBtn" type="submit" value="Add Task" class="btn">
+                    </form>
+                </div>
+                <div class="card-action list-action">
+                    <h5 id="task-title">
+                        Tasks
+                    </h5>   
+                    <div class="input-field col s12">
+                            <input type="text" name="filter" id="filter">
+                            <label for="filter">Filter Tasks</label>
+                        </div>
+                        <ul class="collection">
+                        </ul>
+                        <a href="" class="clear-tasks btn black">Clear Tasks</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+    <!--JavaScript at end of body for optimized loading-->
+    <script src="app.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+</body>
+</html>
