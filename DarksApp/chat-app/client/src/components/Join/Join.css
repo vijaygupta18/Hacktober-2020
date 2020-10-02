@@ -1,0 +1,92 @@
+html, body {
+    font-family: 'Roboto', sans-serif, cursive;
+    padding: 0;
+    margin: 0;
+  }
+  
+#root {
+  height: 100vh;
+}
+
+* {
+    box-sizing: border-box;
+}
+header {
+    background-color: #2ca336;
+    margin: auto -16px;
+    padding: 16px 32px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+}
+header h1 {
+    color: #fff;
+    font-family:  cursive;
+    font-weight: 350;
+  }
+.joinOuterContainer {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    height: 100vh;
+    align-items: center;
+    background-color: #82e680;
+}
+
+.joinInnerContainer {
+    width: 20%;
+}
+
+.joinInput {
+    border-radius: 5px;
+    padding: 15px 20px;
+    width: 100%;
+}
+
+.heading {
+    color: rgb(5, 5, 5);
+    font-family:  cursive;
+    font-size: 2.5em;
+    padding-bottom: 10px;
+    border-bottom: 2px solid white;
+}
+
+.button {
+    color: #fff !important;
+    text-transform: uppercase;
+    text-decoration: none;
+    background: #2979FF;
+    padding: 20px;
+    border-radius: 5px;
+    display: inline-block;
+    border: none;
+    width: 100%;
+}
+
+.mt-20 {
+    margin-top: 20px;
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+.joinOuterContainer {
+    height: 100%;
+}
+
+.joinInnerContainer {
+    width: 90%;
+}
+
+}
+
+button:focus {
+    outline: 0;
+}
+footer {
+    position: absolute;
+    text-align: center;
+    bottom: -50px;
+    width: 100%;
+    height: 2.5rem;
+}
+  
+footer p {
+    color: rgb(216, 215, 215);
+}
