@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+        integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
+        crossorigin="anonymous" />
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+    <!-- Custom CSS-->
+    <link rel="stylesheet" href="style.css">
+    <title>Login</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="brand-name">
+            <div>
+                <a class="welcome">
+                    Welcome Back!
+                </a>
+            </div>
+            <div>
+                <h2 class="login">Log in</h2>
+            </div>
+        </div>
+        <form>
+            <div class="row">
+                <div>
+                    <label for="email">Email</label>
+                    <div class="input-field">
+                        <div class="icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="input">
+                            <input type="email" name="email" required>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <label for="password">Password</label>
+                    <div class="input-field">
+                        <div class="icon">
+                            <i class="fas fa-key"></i>
+                        </div>
+                        <div class="input">
+                            <input type="password" name="password" required>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <button class="button">Login</button>
+                    </div>
+                </div>
+            </div>
+        </form>
+        <div class="account">
+            <span>
+                Don't have an account? &nbsp;
+            </span>
+            <a href="register.html"> Register Here</a>
+        </div>
+    </div>
+</body>
+
+</html>
