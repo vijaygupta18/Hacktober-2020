@@ -1,0 +1,117 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Roboto Mono', monospace;
+}
+.container{
+    max-width: 550px;
+    min-width: 420px;
+    margin: 2em auto;
+    padding: 1em;
+    border-radius: 10px;
+    background: #ffffff;
+    box-shadow:  0px 5px 20px #d6d6d6, 
+                 0px 5px 20px #ffffff;
+}
+.brand-name{
+    text-align: center;
+}
+.welcome{
+    background: linear-gradient(to right, #0050a0,#a00050);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    padding: 0;
+    font-size: 3rem;
+    font-weight:600;
+}
+.register,
+.login{
+    border-top:2px solid #a00050;
+    border-bottom: 2px solid #a00050;
+    display: inline-block;
+    padding:1rem
+}
+.row div{
+    padding: 1em 1rem .75rem;
+}
+
+label{
+    margin:0 auto .5rem 1rem;
+}
+form input{
+    width: 100%;
+    display: block;
+    border: 1px solid #0050a0;
+    border-radius: 10px;
+    padding: 5px 10px;
+    background-color: #fff;
+}
+form input{
+    height: 3rem;
+}
+.input-field{
+    display: flex;
+    padding: 0px;
+}
+.input-field .icon{
+    margin: 0px;
+    padding: 1em;
+    height: 3rem;
+    border:1px solid #0050a0;
+    border-right: 0px;
+    border-radius: 10px 0px 0px 10px;
+    display: flex;
+    background-color: #a00050;  
+    color: #fff;
+}
+.input-field .input{
+    padding: 0px;
+    width: 100%;
+}
+.input-field input{
+    border-radius: 0px 10px 10px 0px;
+    outline:none;
+    border:2px solid #a00050;
+    border-left: 0px;
+}
+.button{
+    width:100%;
+    line-height: 2.5rem;
+    margin-bottom: 1rem;
+    background-color: #0050a0;
+    color:#fff;
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    border: 1px solid #0050a0;
+    border-radius: 1rem;
+    padding: 5px 15px;
+    outline: none;    
+    transition: transform 90ms ease;
+    cursor: pointer;
+}
+.button:active{
+    transform: scale(0.97);
+}
+.button:focus{
+    box-shadow: 0 0 0 3px #fff,
+                0 0 0 6px #0050a0;
+}
+.account {
+    text-align: center;
+    margin: 0px -1rem -1rem;
+    padding: 1rem;
+    border-radius: 0px 0px 10px 10px;
+    background-color: #0050a0;
+}
+.account a{
+    color: #fff;
+}
+a:hover{
+    text-decoration: none;
+}
+@media screen and (max-width:572px){
+    .row div{
+        padding:.5rem;
+    }
+}
