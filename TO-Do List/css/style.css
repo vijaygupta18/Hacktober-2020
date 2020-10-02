@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+   background: linear-gradient(120deg,#f6d365,#fda085);
+}
+.main{
+    animation: load 2s ;
+    margin-top: 50px;
+    /* background-color: black; */
+}
+
+/* .main-box{
+    width:50%;
+    
+} */
+
+.head{
+    text-align: center;
+    color: rgb(243, 242, 210);
+}
+/* .list-content{
+    opacity: ;
+} */
+.fall{
+    transform: translateY(8rem) rotateZ(20deg);
+    opacity: 0;
+}
+
+@keyframes load {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
