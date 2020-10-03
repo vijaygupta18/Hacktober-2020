@@ -1,5 +1,7 @@
 # Hacktober-2020
 
+## This repository is for collecting the different projects made by people who wants to contribute in open source.
+
 ## Give a star 🌟. Get your projects merged quickly on valid pull requests.
 ## Happy coding
 
