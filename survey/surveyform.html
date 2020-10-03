@@ -3,16 +3,22 @@
 <head>
 	<title>FCC:survey form</title>
 	<link rel="stylesheet" type="text/css" href="cssforms.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 </head>
 <body>
-	<div id="main">
-	<div >
-		<h1 id="title">SURVEY FORM</h1>
+     <div id="main">
+	 <div class="alert alert-success">
+		  <strong>Great!</strong> Can you register <a href="https://hacktoberfest.digitalocean.com/">Hacktoberfest 2020</a> before pull request.
+	 </div>
+		
+	<div>
+	  <h1 id="title" class="text-white">SURVEY FORM</h1>
 	</div>
 	<div >
-		<p id="description">Thank you for taking the time to help us improve the platform</p>
+	   <p id="description" class="text-white pt-3">Thank you for taking the time to help us improve the platform</p>
 	</div>
-	<form id="survey-form">
+	     
+	<form id="survey-form" class="mb-5">
 		<div class="formgroup">
 			<label id="name-label">Name</label><br>
 		<input type="text" id="name" name="name" placeholder="Enter your name" required="">
@@ -70,11 +76,11 @@
 	</div>
 	<div class="formgroup">
 		<p>Any comments or suggestions?</p>
-		<textarea id="text" placeholder="enter your comments"></textarea>
+		<textarea id="text" placeholder="Enter Your Comments"></textarea>
 
 	</div>
 	<div class="formgroup">
-		<button type="submit" id="submit">submit</button>
+		<button type="button" id="submit" class="btn-light">Submit</button>
 	</div>
 	</form>
 </div>
