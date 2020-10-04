@@ -1,0 +1,63 @@
+<%- include("./partials/header") %> 
+
+    <div class="login-page-form">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <h1>Sign Up</h1>
+            </div>
+            <div class="container col-md-6">
+                <div class="form-login">
+                    <form action="/register" method="post" enctype="multipart/form-data">
+                        
+                        <div class="form-group">
+                            <label for="username">Username</label>
+                            <input class="form-control" type="text" name="username" placeholder="Type your username here" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="password">Password</label>
+                            <input class="form-control" type="password" name="password" placeholder="Type your password here" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="adminCode">Admin Code</label>
+                            <input class="form-control" type="password" name="adminCode" placeholder="Only if you are Admin!">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="firstName">First Name</label>
+                            <input class="form-control" type="text" name="firstName" placeholder="First Name" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="lastName">Last Name</label>
+                            <input class="form-control" type="text" name="lastName" placeholder="Last Name">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input class="form-control" type="email" name="email" placeholder="hello@world.com" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="bio">Bio</label> 
+                            <textarea class="form-control" type="bio" name="bio" rows="4" placeholder="Add Your Bio"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label for="image">Avatar</label>
+                            <input class="form-control" type="file" id="image" name="image" accept="image/*" required>
+                            <!-- <input class="form-control" type="text" name="avatar" placeholder="Avatar image url"> -->
+                        </div>
+                        <div class="form-group">
+                            <button class="btn btn-lg btn-primary btn-block">Sign Up!</button>
+                        </div>
+                    </form>
+                    <div class="col-md-12 text-center">
+                        <a href="/blogs">Go Back</a>
+                    </div>
+                </div>
+            </div>
+        
+        </div>
+    </div>
+    
+    <%- include("./partials/footer") %> 

@@ -1,0 +1,217 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css?family=Nunito:200,300,400,700" rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    
+    <!-- CSS File -->
+    <link rel="stylesheet" href="Scrabble Scoreboard.css">
+
+    <title>Scrabble Scoreboard</title>
+  </head>
+  
+  <body>
+
+    <div class="container">
+        <div class="jumbotron classyFormat">
+            <h1 id="title">scrabble scoreboard</h1>
+            <hr>
+            <p id="wrapTimeOutter" class="d-none d-lg-block">
+                <span id="elapsedTime">elapsed time: </span><span id="wrapTimeInner"><span id="timer">00:00:00</span></span>
+            </p>
+        </div>
+
+        <div class="row">
+            <div id="playerScoreboard1" class="d-none d-lg-block col-lg-3">
+                <table class="classyFormat" border="3">
+                    <thead>
+                        <tr>
+                            <th>Word</th>
+                            <th>Score</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="p1Points">
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr class="p1Points">
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr class="p1Points">
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr class="p1Points">
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr class="p1Points">
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr class="p1Points">
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr class="p1Points">
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr class="p1Points">
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr class="p1Points">
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr class="p1Points">
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr class="p1Points">
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr class="p1Points">
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr class="p1Points">
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr class="p1Points">
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr class="p1Points">
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="col-md-12 col-lg-6">
+                <div class="row">
+                    <div id="playerDisplay1" class="playerDisplay">
+                        <div id="p1Profile" class="image classyFormat"></div>
+                        <p id="p1Name" class=" name">Player 1</p>
+                        <hr>
+                        <p id="p1PointsTotal" class="pointsTotal">0</p>
+                    </div>
+                    <div id="playerDisplay2" class="playerDisplay">
+                        <div id="p2Profile" class="image classyFormat"></div>
+                        <p id="p2Name" class="name">Player 2</p>
+                        <hr>
+                        <p id="p2PointsTotal" class="pointsTotal">0</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div id="scoreEntry" class="classyFormat">
+                        <div id="scoreEntryInner">
+                            <label for="wordInput">Word:</label>
+                            <input name="wordInput" id="wordInput" type="text" placeholder="scrabble">
+                            <label for="wordScoreInput">Score:</label>
+                            <input name="wordScoreInput" id="wordScoreInput" type="number" placeholder="0">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div id="buttons">
+                        <button id="submitButton" type="button" class="btn btn-lg btn-outline-warning classyFormat">SUBMIT</button>
+                        <button id="skipButton" type="button" class="btn btn-lg btn-outline-warning classyFormat">SKIP</button>
+                    </div>
+                </div>
+            </div>
+            <div id="playerScoreboard2" class="d-none d-lg-block col-md-3">
+                <table class="classyFormat" border="3">
+                    <thead>
+                        <tr>
+                            <th>Word</th>
+                            <th>Score</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="p2Points">
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr class="p2Points">
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr class="p2Points">
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr class="p2Points">
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr class="p2Points">
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr class="p2Points">
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr class="p2Points">
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr class="p2Points">
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr class="p2Points">
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr class="p2Points">
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr class="p2Points">
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr class="p2Points">
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr class="p2Points">
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr class="p2Points">
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr class="p2Points">
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <!-- JQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <!-- JS File -->
+    <script src="Scrabble Scoreboard.js"></script>
+    
+  </body>
+</html>

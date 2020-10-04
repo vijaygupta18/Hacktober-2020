@@ -1,0 +1,117 @@
+.thumbnail img {
+	width: 100%;
+}
+
+.thumbnail {
+	padding: 0;
+}
+
+.delete-form {
+	display: inline;
+}
+
+/* Login Page Styling*/
+
+.form-login {
+	background-color: #ededed;
+	padding-top: 10px;
+	padding-bottom: 20px;
+	padding-left: 20px;
+	padding-right: 20px;
+	border-radius: 15px;
+	border-color: #d2d2d2;
+	border-width: 5px;
+	box-shadow: 0 1px 0 #cfcfcf;
+}
+
+.navbar .navbar-nav > .active > a {
+	color: rgb(255, 255, 255);
+	background-color: grey;
+	border-radius: 10px;
+}
+
+#search-nav {
+	border-radius: 10px;
+	margin-right: 10px;
+}
+
+#user-posts-list * {
+	margin: 0;
+	padding: 0;
+}
+
+#user-posts-list div {
+	margin: 20px;
+}
+
+#user-posts-list ul {
+	list-style-type: none;
+	width: 500px;
+}
+
+#user-posts-list h3 {
+	font: bold 20px/1.5 Helvetica, Verdana, sans-serif;
+}
+
+#user-posts-list li img {
+	float: left;
+	margin: 0 15px 0 0;
+	height: 70px;
+	width: 70px;
+}
+
+#user-posts-list li p {
+	font: 200 12px/1.5 Georgia, Times New Roman, serif;
+}
+
+#user-posts-list li {
+	padding: 10px;
+	overflow: auto;
+}
+
+#user-posts-list li:hover {
+	background: #eee;
+	cursor: pointer;
+}
+
+#like-popup * {
+	margin: 0;
+	padding: 0;
+}
+
+#like-popup div {
+	margin: 20px;
+}
+
+#like-popup ul {
+	list-style-type: none;
+	width: 466px;
+}
+
+#like-popup h3 {
+	font: bold 20px/1.5 Helvetica, Verdana, sans-serif;
+}
+
+#like-popup li {
+	padding: 10px;
+	overflow: auto;
+}
+
+#like-popup li:hover {
+	background: #eee;
+	cursor: pointer;
+}
+
+#total-like-counter {
+	border-radius: 50%;
+	width: 36px;
+	height: 36px;
+	padding-top: 2px;
+
+	background: lightcoral;
+	color: white;
+	text-align: center;
+
+	font: 30px Arial, sans-serif;
+	display: inline-block;
+}

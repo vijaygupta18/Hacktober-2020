@@ -1,0 +1,74 @@
+body{
+    background-color: #00141a;
+    margin : 0px;
+    padding: 0px;
+    font-family: "Montserrat";
+}
+.square{
+    background-color: green;
+    width: 30%;
+    padding-bottom: 30%;
+    margin: 1.66%;
+    float: left;
+    border-radius: 15%;
+    transition: background 0.8s;
+    -webkit-transition: background 0.8s;
+    -moz-transition: background 0.8s;
+}
+#container{
+    max-width: 600px;
+    margin: 20px auto;
+}
+h1{
+    text-align: center;
+    color: white;
+    text-transform: uppercase;
+    font-weight: normal;
+    line-height: 1.1;
+    background-color: steelblue;
+    padding: 20px 0px;
+    margin: 0px;
+    transition: background 1.1s;
+    -webkit-transition: background 1.1s;
+    -moz-transition: background 1.1s;
+}
+#stripe{
+    color: #00141a;
+    height: 30px;
+    text-align: center;
+    background-color: white;
+}
+
+button{
+    height: 100%;
+    border: none;
+    background: none;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: inherit;
+    color: steelblue;
+    letter-spacing: 1px;
+    transition: all 1.1s;
+    outline: none;
+    -webkit-transition: all 1.1s;
+    -moz-transition: all 1.1s;
+}
+button:hover{
+    color:white;
+    background:steelblue;
+}
+
+.selected{
+    background: steelblue;
+    color: white;
+}
+
+#message{
+    display: inline-block;
+    width: 20%;
+    color: #00141a;
+}
+#colorDisplay{
+    font-size: 50px;
+    font-weight: 700;
+}

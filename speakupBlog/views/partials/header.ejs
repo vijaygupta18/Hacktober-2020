@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- Make site responsive on mobile/tablet -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>SpeakUP</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/4d8b6c6711.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="/stylesheets/main.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark mb-4">
+        <a class="navbar-brand" href="/"><i class="fab fa-microblog"></i>SpeakUP</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            
+            <ul class="navbar-nav mr-auto" style="margin-right: 10px;">
+                <li class="nav-item <%= typeof page !== 'undefined' && page === 'blogs' ? 'active' : '' %>">
+                    <a href="/blogs" class="nav-link">Home</a>
+                </li>
+            </ul>
+            <form class="form-inline mt-2 mt-md-0" role="search" action="/blogs" method="GET">
+                <div class="form-group">
+                    <input class="form-control mr-sm-2" type="text" name="search" placeholder="Blog Search..." aria-label="Search" style="border-radius: 5px;">
+                </div>
+                <button id="search-nav" type="submit" value="Search" class="btn btn-outline-success my-2 my-sm-0"><i class="fa fa-search"></i></button>
+            </form>
+            <ul class="navbar-nav">
+                <% if(!currentUser){ %>
+                    <li class="nav-item <%= typeof page !== 'undefined' && page === 'login' ? 'active' : '' %>">
+                        <a href="/login" class="nav-link">Login</a>
+                    </li>
+                    <li class="nav-item <%= typeof page !== 'undefined' && page === 'register' ? 'active' : '' %>">
+                        <a href="/register" class="nav-link">Sign Up</a>
+                    </li>
+                    <% } else { %>
+                        <li class="nav-tem">
+                            <a href="/users/<%= currentUser._id %>" class="nav-link">Signed In as <%= currentUser.firstName %></a>
+                        </li>
+                        <li class="nav-tem">
+                            <a href="/logout" class="nav-link">Logout</a>
+                        </li>
+                        <% } %>
+                    </ul>
+                </div>
+            </nav>
+            
+            <div class="container">
+                <%if(error && error.length>0){ %>
+                    <div class="alert alert-danger" role="alert"><%= error %></div>
+                <% } %>
+                <% if(success && success.length>0){ %>  
+                    <div class="alert alert-success" role="alert"><%= success %></div>
+                <% } %> 
+            </div>
+            <div class="container">
+                        

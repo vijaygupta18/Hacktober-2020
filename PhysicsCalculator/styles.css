@@ -20,7 +20,7 @@
 
 
 body {
-  font-family: 'Share', cursive;
+  font-family: Arial, Helvetica, sans-serif;
   padding: 66px 0;
   background: var(--mainbackground);
   color: var(--textcolor);
