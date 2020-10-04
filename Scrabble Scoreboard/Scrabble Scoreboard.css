@@ -1,0 +1,284 @@
+html {
+	height: 100%;
+}
+
+body {
+	background-image: url(https://images.unsplash.com/photo-1495195129352-aeb325a55b65?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1955&q=80);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.classyFormat {
+	font-family: "Caladea";
+	color: #ffbc03;
+	background-color: #800000;
+	border: double 3px #ffbc03;
+	box-shadow: 0.5px 3px 3px rgba(0,0,0,0.5),
+				1px 5px 11px rgba(0,0,0,0.3),
+				3px 7px 19px rgba(0,0,0,0.1);
+}
+
+.container {
+	margin: auto;
+	padding-right: 0px;
+	padding-left: 0px;
+}
+
+/*‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾*\
+|            JUMBOTRON             ︳
+\*________________________________*/
+
+.container .jumbotron {
+    /*display: flex;*/
+    height: 160px;
+	padding-top: 8px;
+	padding-bottom: 8px;
+	margin: 18px 1.6rem 24px 1.6rem;
+    align-items: center;
+	text-shadow: 0.5px 3px 3px rgba(0,0,0,0.2),
+		 		 1px 6px 13px rgba(0,0,0,0.1),
+				 3px 12px 23px rgba(0,0,0,0.1);
+}
+
+.jumbotron #title {
+	text-align: center;
+	font-size: 3em;
+	text-transform: uppercase;
+}
+
+.jumbotron hr {
+	margin-top: 10px;
+	margin-bottom: 8px;
+}
+
+#wrapTimeOutter {
+	text-align: center;
+}
+
+.jumbotron #wrapTimeOutter #elapsedTime {
+	font-size: 2.7em;
+	text-transform: uppercase;
+}
+
+#wrapTimeOutter #wrapTimeInner {
+    background-color: #DFD5CD;
+    width: 60%;
+	cursor:pointer;
+    font-size: 2.5em;
+    border-radius: 10px;
+    border: solid black 1px;
+    margin: auto;
+    text-align: center;
+	position: relative;
+}
+
+#timer {
+	padding: 0em 0.5em 0em 0.5em;
+	display: inline-block;
+	font-size: 1.1em;
+	color: black;
+}
+
+/*‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾*\
+|          SCORING TABLES          ︳
+\*________________________________*/
+
+table {
+	border-collapse: separate;
+	margin: auto;
+}
+
+th {
+	padding-left: 3px;
+}
+
+td {
+	height: 28px;
+	padding-left: 3px;
+	color: black;
+	font-size: 1rem;
+	text-transform: uppercase;
+	background-color: #DFD5CD;
+}
+
+.skipped {
+	font-style: italic;
+	font-size: 0.8em;
+	color: red;
+	text-align: center;
+}
+
+tr th:nth-child(1) {
+	width: 180px;
+}
+
+tr th:nth-child(2) {
+	width: 50px;
+}
+
+tr td:nth-child(2) {
+	text-align: center;
+}
+
+#playerScoreboard1 {
+	padding-top: 20px;
+	padding-left: 0%;
+}
+
+#playerScoreboard2 {
+	padding-top: 20px;
+	padding-right: 0%;
+}
+
+/*‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾*\
+|          PLAYER DISPLAY          ︳
+\*________________________________*/
+
+.playerDisplay {
+	margin: auto;
+	text-align: center;
+}
+
+.image {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 200px;
+	height: 200px;
+	background-size: cover;
+	background-position: center;
+	border: double goldenrod 4px;
+    transition: all 0.15s;
+	    -webkit--transition: all 0.15s;
+	    -moz-transition: all 0.15s;
+}
+
+.p1Profile1 {
+	background-image: url(https://images.unsplash.com/photo-1511044568932-338cba0ad803?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80);
+}
+
+.p1Profile2 {
+	background-image: url(https://images.unsplash.com/photo-1500479694472-551d1fb6258d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80);
+}
+
+.p1Profile3 {
+	background-image: url(https://images.unsplash.com/photo-1521651201144-634f700b36ef?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80);
+}
+
+.p2Profile1 {
+	background-image: url(https://images.unsplash.com/photo-1548439739-0cf616cef1cd?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80);
+}
+
+.p2Profile2 {
+	background-image: url(https://images.unsplash.com/photo-1535083783855-76ae62b2914e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80);
+}
+
+.p2Profile3 {
+	background-image: url(https://images.unsplash.com/photo-1460999158988-6f0380f81f4d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80);
+}
+
+.isTurn {
+	border: solid lightgreen 5px;
+	-webkit-border-radius: 1px;
+		-moz-border-radius: 1px;
+			border-radius: 1px;
+	-webkit-box-shadow: 0px 0px 20px lightgreen;
+		-moz-box-shadow: 0px 0px 20px lightgreen;
+			box-shadow: 0px 0px 20px lightgreen;
+}
+
+.name {
+	font-size: 2em;
+	margin-bottom: 5px;
+	text-shadow: 2px 1.5px 3px rgba(0,0,0,0.4),
+		 		 3px 4px 13px rgba(0,0,0,0.3),
+				 4px 12px 23px rgba(0,0,0,0.1);
+}
+
+.playerDisplay hr {
+	width: 50%;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	border-top: solid 1px #ffbc03;
+	border-bottom: solid 1px rgba(0,0,0,0.2);
+}
+
+/*‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾*\
+|       POINTS ENTRY TABLE         ︳
+\*________________________________*/
+
+.pointsTotal {
+	font-size: 4em;
+	margin-bottom: 6px;
+	text-shadow: 2px 1.5px 3px rgba(0,0,0,0.4),
+		 		 3px 4px 13px rgba(0,0,0,0.3),
+				 4px 12px 23px rgba(0,0,0,0.1);
+}
+
+#scoreEntry {
+	height: 50px;
+	margin: auto;
+	margin-bottom: 15px;
+	font-size: 1.5em;
+}
+
+#scoreEntryInner {
+	height: 52px;
+	margin-top: 1px;
+	display: inline-block;
+}
+
+label:nth-child(1) {
+	margin-bottom: 0px;
+	margin-left: 3px;
+}
+
+input {
+	background-color: #DFD5CD;
+	padding-left: 3px;	
+}
+
+#wordInput {
+	width: 240px;
+	text-transform: uppercase;
+	margin: auto;
+}
+
+#wordScoreInput {
+	width: 65px;
+	margin: auto;
+}
+
+.btn-outline-warning {
+	font-family: "Roboto Mono";
+	color: gold;
+	background-color: #800000;
+}
+
+#buttons {
+	margin: auto;
+}
+
+#submitButton {
+	margin-right: 15px;
+	padding: 8px 90px 8px 90px;
+}
+
+#skipButton {
+	padding: 8px 8px 8px 8px;
+}
+
+.blinkyAlert {
+	border: solid rgba(255,0,0,0.8) 2px;
+	-webkit-box-shadow: 0px 0px 20px red;
+		-moz-box-shadow: 0px 0px 20px red;
+			box-shadow: 0px 0px 20px red;
+}
+
+.blinkyAlert2 {
+	border: solid rgba(255,0,0,0.2) 2px;
+	-webkit-box-shadow: 0px 0px 10px red;
+		-moz-box-shadow: 0px 0px 10px red;
+			box-shadow: 0px 0px 10px red;
+}
