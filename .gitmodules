@@ -1,0 +1,3 @@
+[submodule "InShortsScraper"]
+	path = InShortsScraper
+	url = https://github.com/Shreya549/InShortsScraper.git
