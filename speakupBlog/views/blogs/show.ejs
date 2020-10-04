@@ -1,0 +1,123 @@
+<%- include("../partials/header") %> 
+
+<div class="row">
+    <!-- <div class="col-md-3">
+        <p class="lead">SpeakUP</p>
+        <div class="list-group">
+            <li class="list-group-item active">Info 1</li>
+            <li class="list-group-item">Info 2</li>
+            <li class="list-group-item">Info 3</li>
+        </div>
+    </div> -->
+    <div class="col-md-12">
+        <div class="card mb-3">
+            <img src="<%= blog.image %>" class="card-img-top" alt="<%= blog.name %>">
+            <div class="card-body">
+                <h5 class="card-title"><%= blog.name %></h5>
+                <div style="padding-bottom: 10px;">
+                    <form action="/blogs/<%= blog._id %>/like" method="POST">
+                        <div class="btn-group">
+                            <% if (currentUser && blog.likes.some(function (like) {
+                                return like.equals(currentUser._id)
+                            })) { %>
+                            <button class="btn btn-sm btn-primary">
+                                <i class="fas fa-thumbs-up"></i> Liked (<%= blog.likes.length %>)
+                            </button>
+                            <% } else { %>
+                            <button class="btn btn-sm btn-secondary">
+                                <i class="fas fa-thumbs-up"></i> Like (<%= blog.likes.length %>)
+                            </button>
+                            <% } %>
+                            <button type="button" class="btn btn-sm btn-default" data-toggle="modal"
+                                    data-target="#blogLikes">See all likes
+                            </button>
+                        </div>
+                    </form>
+                </div>
+                <p>
+                    <em>Submitted by <a href="/users/<%= blog.author.id %>"><%= blog.author.username %></a>, <%= moment(blog.createdAt).fromNow() %></em>
+                </p>
+                <hr>
+                <p class="card-text">
+                    <%- blog.description %> 
+                </p>
+                
+                <% if(currentUser && blog.author.id.equals(currentUser._id) || currentUser && currentUser.isAdmin ){ %>
+                    <a class="btn btn-warning" href="/blogs/<%= blog._id %>/edit">Edit</a>
+                    <form class="delete-form" action="/blogs/<%= blog._id %>?_method=DELETE" method="post">
+                        <button class="btn btn-danger">Delete</button>
+                    </form>
+                    <% } %> 
+            </div>
+        </div> 
+        <div class="card">
+            <div class="card-body">
+                <div class="text-right">
+                    <a class="btn btn-success" href="/blogs/<%= blog._id %>/comments/new ">Add New Comment</a>
+                </div>
+                <hr>
+                <div class="row">
+                    <% blog.comments.forEach(comment=>{ %>
+                        <div class="col-md-12 mb-2">
+                            <div class="card">
+                                <div class="card-body">
+                                    <div class="float-left">
+                                        <p class="card-title"><strong><%= comment.author.username %></strong></p>
+                                        <p class="card-text"><%- comment.text %></p>
+                                    </div>
+                                    <div class="float-right">
+                                        <p><%= moment(comment.createdAt).fromNow()%></p> 
+                                        <% if(currentUser && comment.author.id.equals(currentUser._id) || currentUser && currentUser.isAdmin){ %>
+                                            <div class="float-right">
+                                                <a href="/blogs/<%= blog._id %>/comments/<%= comment._id %>/edit" class="btn btn-sm btn-warning">Edit</a>
+                                                <form class="delete-form" action="/blogs/<%= blog._id %>/comments/<%= comment._id %>?_method=DELETE" method="post">
+                                                    <input type="submit" value="Delete" class="btn btn-sm btn-danger">
+                                                </form>
+                                            </div>
+                                        <% } %> 
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    <% }) %> 
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+        
+
+<div id="blogLikes" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title">"<%= blog.name %>" likes: <div id="total-like-counter"><%= blog.likes.length %></div></h4>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body" id="like-popup">
+                    <h3>Liked by:</h3>
+                    <hr>
+                    <% blog.likes.forEach(function(like) { %>
+                        <ul>
+                            <li>
+                                <span class="badge"><i class="fas fa-user"></i></span>
+                                <a href="/users/<%= like.id %>"><%= like.username %></a>
+                            </li>
+                        </ul>
+                    <% }); %>
+                    <% if (blog.likes.length === 0) { %>
+                        <tr>
+                            <td><em>No likes yet.</em></td>
+                        </tr>
+                    <% } %>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+<%- include("../partials/footer") %> 
+            
