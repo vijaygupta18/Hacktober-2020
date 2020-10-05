@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+<head>
+	<title>db_view</title>
+</head>
+<style>
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th, td {
+    text-align: center;
+    padding: 8px;
+}
+
+tr:nth-child(even){background-color: #f2f2f2}
+
+th,thead {
+    background-color: #4CAF50;
+    color: white;
+}
+</style>
+<body>
+<table border = 1>
+	<thead>
+		<td>ID</td>
+		<td>a</td>
+		<td>b</td>
+		<td>c</td>
+	</thead>
+   {% for row in rows %}
+   <tr>
+   <td>{{row[0]}}</td>
+   <td>{{row[1]}}</td>
+   <td>{{row[2]}}</td>
+   <td>{{row[3]}}</td>
+   </tr>
+	{% endfor %}
+</table>
+</body>
+</html>
