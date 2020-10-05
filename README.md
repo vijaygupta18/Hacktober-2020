@@ -2,21 +2,24 @@
 
 ## This repository is for collecting the different projects made by people who wants to contribute in open source.
 
+## Follow the steps below so know about Pull request and how to create request
+
 ## Give a star 🌟. Get your projects merged quickly on valid pull requests.
 ## Happy coding
 
-- Anyone can add any type of html-css web page depends on you.
+- Anyone can add any type of valid html-css web page depends on you.
 
 - You can add any small projects you have made.
 
 - You can add programs too, in any programming language.
+
+- Do not just re-edit the file make some small changes.
 
 - Do not add anyone else's work in this repository.It will leads to failure of your pull request.
 
 
 
 
-Anybody can make contribution.
 
 Steps To Generate PR(Pull Request)
 
