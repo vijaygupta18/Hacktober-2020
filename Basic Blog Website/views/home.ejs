@@ -1,0 +1,42 @@
+<%- include("partials/header.ejs") %>
+
+
+<body style="position: relative;">
+    <div class="container">
+
+        <h1>Home</h1>
+        <p><%= para %></p>
+        <br />
+        <br />
+
+        <!--
+    a. Using for loop:-
+
+        <% // for(var i = 0; i < blogPost.length; i++){ %>
+             <% // console.log(blogPost[i].title); %>
+         <% // } %>
+
+    b. Using forEach loop:-
+    
+        <% // blogPost.forEach((blog, index) => { %>
+            <% // console.log(blog.content) %>
+        <% // }) %>
+ -->
+
+        <!-- c. Using map -->
+
+        <% blogPost.map((blog, index) => { %>
+        <h1> <%= blog.title %> </h1>
+
+        <!-- truncate content to 100 characters length -->
+        <p> <%= blog.content.substring(0, 100) + "..." %>
+
+            <!-- Adding read more functionality in each blog -->
+            <a href="/post/<%= blog.title %>">Read more</a>
+        </p>
+
+        <br />
+        <% }) %>
+
+
+        <%- include("partials/footer.ejs") %>
