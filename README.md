@@ -11,9 +11,9 @@
 
 - You can add any small projects you have made.
 
-- You can add programs too, in any programming language.
+- You can add programs too, in any programming language,buy your program must be something different or unique.
 
-- Do not just re-edit the file make some small changes.
+- Do not just re-edit the file or make some small changes this kind of PRs will not be accepted.
 
 - Do not add anyone else's work in this repository.It will leads to failure of your pull request.
 
