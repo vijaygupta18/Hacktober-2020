@@ -11,7 +11,7 @@
 
 - You can add any small projects you have made.
 
-- You can add programs too, in any programming language,buy your program must be something different or unique.
+- You can add programs too, in any programming language, but your program must be something different or unique.
 
 - Do not just re-edit the file or make some small changes this kind of PRs will not be accepted.
 
