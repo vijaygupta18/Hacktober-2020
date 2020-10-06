@@ -1,1 +1,1 @@
-Python code to recognise handwritten digits using KNN algorithm. It uses the MNIST Dataset. OpenCV library is used in this project. 
+Python code to recognise handwritten digits using KNN algorithm. It uses the MNIST Dataset. OpenCV library is used in this project. I could not add MNIST Training data because it exceeds 25 MB. But, it is readily available on the internet to download.
