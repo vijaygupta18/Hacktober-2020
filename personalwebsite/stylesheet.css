@@ -1,0 +1,57 @@
+body {
+    background: #000000;
+}
+
+.typing p{
+    color: #CCCCCC;
+    overflow: hidden;
+    white-space: nowrap;
+    font-family: Consolas;
+    border-right: 4px solid orange;
+    width: 20ch;
+    animation: 
+        type 3s steps(20),    
+        blinking-cursor 1s step-end infinite;
+}
+
+.typing p:nth-child(2){
+    opacity: 0;
+    animation: 
+        type2 3s steps(20),  
+        blinking-cursor 1s step-end infinite;
+    animation-delay: 3s;
+}
+
+@keyframes type{
+    0%{
+        width: 0ch;
+    }
+    100%{
+        width: 20ch;
+        border: none;    
+    }
+}
+
+@keyframes type2{
+    0%{
+        
+        width: 0ch;
+    }
+    1%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 1;
+        width: 20ch;
+           
+    }
+}
+
+@keyframes blinking-cursor {
+    0%{
+        border-color: orange;
+    }
+    50%{
+        border-color: transparent;    
+    }
+  }
