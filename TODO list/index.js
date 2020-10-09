@@ -4,7 +4,6 @@ $(document).ready(function () {
     var currentDate = moment().format('dddd, MMMM Do YYYY');
     $("#currentDate").text(currentDate);
 
-
     $("#list-items").html(localStorage.getItem("listItems"));
 
     $(".add-items").submit(function (event) {
