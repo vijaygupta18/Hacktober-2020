@@ -1,0 +1,115 @@
+body {
+    background: #000000;
+}
+
+h1{
+    color: #F0F0f0;
+    font-size: 8vw;
+    overflow: hidden;
+    white-space: nowrap;
+    font-family: Monospace;
+    border-right: 1vw solid #6ABEDB;
+    width: 20ch;
+    animation: 
+        type 3s steps(20),    
+        blinking-cursor 1s step-end infinite;
+}
+
+.typing {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+}
+
+@keyframes type{
+    0%{
+        width: 0ch;
+    }
+    100%{
+        width: 20ch;
+        border: none;    
+    }
+}
+
+@keyframes blinking-cursor {
+    0%{
+        border-color: #6ABEDB;
+    }
+    50%{
+        border-color: transparent;    
+    }
+}
+
+footer {
+    padding: 1vw;
+    font-family: Monospace;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: #F0F0f0;
+    text-align: center;
+    
+}
+  
+footer a:hover {
+    color: #6ABEDB;
+}
+  
+.link {
+    font-size: 2em;
+    display: inline-block;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.link::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 0.1vw;
+    background: #6ABEDB;
+    transition: width .3s;
+}
+
+.link:hover::after {
+    width: 100%;
+    color: #6ABEDB;
+    background: #6ABEDB;
+    transition: width .3s;
+}
+
+p { 
+    display: inline;
+    font-size: 2em;
+}
+
+#header{
+    position: absolute;
+    left: 50%;
+    -moz-transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+
+#header a{
+    font-family: Monospace;
+    font-size: 1em;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+#header a:hover{
+    font-family: Monospace;
+    color: #6ABEDB;
+}
+
+#header p{
+    font-family: Monospace;
+    font-size: 1em;
+    color: #FFFFFF;
+    text-decoration: none;
+}
