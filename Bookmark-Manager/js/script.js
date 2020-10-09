@@ -4,22 +4,6 @@ document.getElementById("myForm").addEventListener("submit", saveBookmark);
 document.getElementById("searchBox").addEventListener("keyup", searchBookmark);
 document.getElementById("searchBox").addEventListener("submit", searchBookmark);
 
-
-$('document').ready(function () {
-
-  dialog = $("#dialog-form").dialog({
-    autoOpen: false,
-    height: 250,
-    width: 250,
-    modal: true,
-    buttons: {
-      close: function () {
-        dialog.dialog("close");
-      }
-    }
-  });
-})
-
 function saveBookmark(event) {
   event.preventDefault(); // prevents default behaviour of form submit
 
