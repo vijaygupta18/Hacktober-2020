@@ -1,0 +1,47 @@
+<html>
+
+<head>
+	<title>Software Engineering</title>
+
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+	<script src="https://kit.fontawesome.com/13c373d8b6.js" crossorigin="anonymous"></script>
+	<link rel="stylesheet" type="text/css" href="/stylesheets/app.css">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+		<div class="container">
+			<a class="navbar-brand" href="/home"><i class="fa fa-book"></i>SE</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<form class="navbar-nav form-inline my-2 my-lg-0 ml-auto">
+					<% if(currentUser){ %>
+						<a class="nav-item btn btn-dark btn-lg mx-1 my-2 my-sm-0" href="/home">Home
+						</a>
+					<% if(currentUser.isAdmin){%>
+					<a class="nav-item btn btn-dark btn-lg mx-1 my-2 my-sm-0" href="/dashboard">Admin dashboard</a>
+					<% } %>
+					<div class="dropdown">
+						<a class="btn btn-secondary btn-lg dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							<%= currentUser.username %> 
+						</a>
+
+						<div class="nav-item dropdown-menu" aria-labelledby="dropdownMenuLink">
+							<a class="dropdown-item" href="/profile/<%= currentUser._id %> ">Profile</a>
+							<a class="dropdown-item" href="/logout">Logout</a>
+						</div>
+					</div>
+					<% } else{ %>
+					<a class="nav-item btn btn-dark btn-lg mx-1 my-2 my-sm-0" href="/login">Login</a>
+					<% } %>
+				</form>
+
+			</div>
+		</div>
+	</nav>

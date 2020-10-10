@@ -1,0 +1,84 @@
+<%- include("partials/header") %>
+
+<div class="container mbody">
+  <% if(success && success.length>0) {%>
+  <div class="alert alert-success d-flex">
+    <%=success%>
+  </div>
+  <br>
+  <% } %>
+  <% if(error && error.length>0) {%>
+  <div class="alert alert-danger d-flex">
+    <%=error%>
+  </div>
+  <br>
+  <% } %>
+</div>
+
+<div class="container">
+	<div class="row">
+		<div class="col-md-3 ">
+		     <div class="list-group ">
+              <a href="" class="list-group-item list-group-item-action active">User and Data Management</a>
+              <a href="/dashboard/createuser" class="list-group-item list-group-item-action">Add Users</a>
+
+            </div> 
+		</div>
+		<div class="col-md-9">
+      <%if(currentUser.isAdmin){%>
+        <main role="main" class="col-md-9 mx-auto col-lg-10 px-md-4">
+          <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+            <h1 class="h2">Dashboard</h1>
+            <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
+              <div class="btn-group" role="group" aria-label="First group">
+              </div>
+            </div>
+          </div>
+      
+          <h1 class="h4">Manage users</h1>
+          <div class="table-responsive">
+            <table class="table table-bordered table-sm">
+              <thead>
+                <tr>
+                  <th>User</th>
+                  <th>Role</th>
+                  <th>Manage</th>
+              </thead>
+              <tbody>
+                <% users.forEach(function(user){ %>
+                <tr class="text-center">
+                  <td class="single line align-middle">
+                    <%=user.username%></td>
+                  <td class="single line align-middle">
+                    <% if(user.isAdmin){ %>
+                    <b>Admin</b>
+                    <% if(user.username===currentUser.username){%>
+                    (You)
+                    <%}%>
+                          <%} else { %>
+                    Normal user
+                    <%  }%>
+                  </td>
+                  <td>
+                    <a class="btn fas fa-user-edit mx-2" href="/dashboard/<%=user._id%>/edituser"></a>
+                  </td>
+                </tr>
+                <%  }) %>
+              </tbody>
+            </table>
+          </div>
+          <a class="btn btn-outline-secondary float-left" onClick="history.back()">Back</a>
+        </main>
+        <%} else { %>
+        <div class="alert alert-danger" role="alert">
+          Dear <%=currentUser.username%>, you shouldn't be here.
+        </div>
+        <a class="btn btn-outline-secondary" onClick="history.back()">Back</a>
+      
+        <% } %>
+      
+		</div>
+	</div>
+</div>
+
+<%- include("partials/footer") %>

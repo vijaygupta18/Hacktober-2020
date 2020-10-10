@@ -1,0 +1,65 @@
+
+<html>
+
+  <head>
+    <title>Software Engineering</title>
+  
+  
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <script src="https://kit.fontawesome.com/13c373d8b6.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="/stylesheets/app.css">
+    <link rel="stylesheet" type="text/css" href="/stylesheets/signin.css">
+  
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+  
+  <body>
+  
+<div class="mbody container">
+  <% if(success && success.length>0) {%>
+  <div class="alert alert-success">
+    <%=success%>
+  </div>
+  <% } %>
+  <% if(error && error.length>0) {%>
+  <div class="alert alert-danger">
+    <%=error%>
+  </div>
+  <% } %>
+  <div style="margin:2rem;">
+    <h1 style="text-align:center;">Welcome to SE Mini Project<i class="fa fa-book"></i></h1>
+  </div>
+  <div style="width:100%;">
+    <form class="form-signin" action="/login" method="POST">
+      <h1 class="h3 mb-3 font-weight-normal">Log in to continue</h1>
+      <label for="inputEmail" class="sr-only">Username</label>
+      <input type="text" id="inputEmail" class="form-control" name="username" placeholder="Username" required autofocus>
+      <label for="inputPassword" class="sr-only">Password</label>
+      <input type="password" id="inputPassword" class="form-control" name="password" placeholder="Password" required>
+      <div class="checkbox mb-3">
+        <label>
+          <input type="checkbox" value="remember-me"> Remember me
+        </label>
+      </div>
+      <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
+    </form>
+    
+
+    <!-- <form class="form-inline d-flex justify-content-center flex-column" action="/login" method="POST">
+      <div class="form-group m-3">
+        <input class="form-control" type="text" name="username" placeholder="Username">
+      </div>
+      <div class="form-group m-3">
+        <input class="form-control" type="password" name="password" placeholder="Password">
+      </div>
+      <div class="form-group my-3" style="width:40%">
+        <button class="btn btn-lg btn-dark btn-block" style="width:5em;margin:auto;">Login</button>
+      </div>
+    </form> -->
+  </div>
+</div>
+
+
+
+<%- include("partials/footer") %>
