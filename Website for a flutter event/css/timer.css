@@ -1,0 +1,227 @@
+/*/*/*/*/*/*/*/*/*@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto:300&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
+
+/*@media
+    only screen and (-webkit-min-device-pixel-ratio: 1.5),
+    only screen and (-o-min-device-pixel-ratio: 3/2),
+    only screen and (min--moz-device-pixel-ratio: 1.5),
+    only screen and (min-device-pixel-ratio: 1.5){
+  html,
+  body{
+    width:100%;
+    overflow-x:hidden;
+    }
+  }*/
+
+@keyframes fade {
+  from {
+    opacity: 0;
+    transform: scale3d(.75,.75,1);
+  }
+  to {
+    opacity: 1;
+    transform: scale3d(1,1,1);
+  }
+} 
+
+
+  
+
+h1 {
+  color: #fcfcfc;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+/*timer*/
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+.a1{
+  width:70vw;
+}
+
+.new {
+	margin-top: 50px;
+	margin-bottom: 50px;
+
+background: #0000;
+    border: 1px solid #0000;
+    
+  height: 30vh;
+  color: #727577;
+  font-family: 'Lato', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border: 8px solid;
+  border-radius: 20px;
+  padding: 10px;
+  padding-right: 10px;
+  box-shadow: 7px 4px 3px #00BCD4, 10px 10px #0f4c75;
+  overflow: hidden;
+}
+
+/* Add a dark overlay */
+.linetime{
+  border: 1px solid #0f4c75;
+  width:50%;
+}
+
+
+#days{
+
+  font-family: Montserrat;
+font-style: normal;
+font-size: 36px;
+font-weight: 600;
+text-align: center;
+color: #0f4c75;
+}
+#hours{
+  text-align: center;
+  font-size: 36px;
+  font-family: Montserrat;
+font-style: normal;
+font-weight: 600;
+color: #0f4c75;
+}
+#minutes{
+  text-align: center;
+  font-size: 36px;
+   font-family: Montserrat;
+font-style: normal;
+font-weight: 600;
+color: #0f4c75;
+}
+#seconds{
+  text-align: center;
+  font-size: 36px;
+  font-family: Montserrat;
+font-style: normal;
+font-weight: 600;
+color: #0f4c75;
+}
+
+@media (max-width: 500px) {
+
+}
+.countdown {
+width:70vw;
+  /*transform: scale(2);*/
+}
+
+@media (max-width: 500px) {
+  h1 {
+    font-size: 45px;
+  }
+}
+.container.gallery-container {
+   background-color:  #171717;
+    color: #35373a;
+    min-height: 100vh;
+    padding: 30px 50px;
+}
+
+.gallery-container h1 {
+    text-align: center;
+    margin-top: 50px;
+    font-family: 'Droid Sans', sans-serif;
+    font-weight: bold;
+}
+
+.gallery-container p.page-description {
+    text-align: center;
+    margin: 25px auto;
+    font-size: 18px;
+    color: #999;
+}
+
+.tz-gallery {
+    padding: 40px;
+}
+
+/* Override bootstrap column paddings */
+.tz-gallery .row > div {
+    padding: 2px;
+}
+
+.tz-gallery .lightbox img {
+    width: 100%;
+    border-radius: 10px;
+    position: relative;
+}
+
+.tz-gallery .lightbox:before {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -13px;
+    margin-left: -13px;
+    opacity: 0;
+    color: #fff;
+    font-size: 26px;
+    font-family: 'Glyphicons Halflings';
+    content: '';
+    pointer-events:auto;
+    z-index: 9000;
+    transition: 0.4s;
+}
+
+
+.tz-gallery .lightbox:after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    background-color: rgba(46,78,132, 0.4);
+    content: '';
+    transition: 0.4s;
+}
+
+.tz-gallery .lightbox:hover:after,
+.tz-gallery .lightbox:hover:before {
+    opacity: 1;
+}
+
+.baguetteBox-button {
+    background-color: transparent !important;
+}
+
+@media(max-width: 768px) {
+    body {
+        padding: 0;
+    }
+}
+.a{
+ 
+background: rgba(255, 255, 255, 0.15);
+padding:0px;
+width:100%;
+  height: 140px;
+  text-align: center;
+  padding-top: 15px;
+}
+.abc{
+  width: 17%;
+}
+@media (max-width: 500px) {
+  .abc{
+ width: 1000px;
+}
+.abcd{
+   width:0px;
+}
+.a1{
+  width:90%;
+}
+}
+}
