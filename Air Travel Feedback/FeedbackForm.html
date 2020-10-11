@@ -1,0 +1,92 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="styles.css">
+      </head>
+  <body id="background">
+ 
+   <div class="container">
+    <h1 id="title">AIR TRAVEL FEEDBACK</h1>
+    <p id="description">Thank you for choosing our airlines, we hope to serve you again!</p>
+    
+    <form id="survey-form">
+      <label id="name-label" for="name"><b>Name</b></label><br/>
+    <input type="text" id="name" placeholder="Enter your name" required>
+    <br/><br/>
+    <label id="email-label" for="email"><b>E-mail</b></label><br/>
+    <input type="email" id="email" placeholder="Enter your e-mail" required pattern=".+@.+.com"
+          title="Please provide proper e-mail address">
+    <br/><br/>
+      <label id="number-label" for="number"><b>Age</b></label><br/>
+      <input type="number" id="number" placeholder="Enter your Age" min="1" max="75" required title="Please enter a proper number within range">
+       <br/><br/>
+      <label id="gender"><b>Gender</b></label><br/>
+       <input type="radio" id="male" name="gender" value="male">
+  <label for="male">Male</label><br>
+  <input type="radio" id="female" name="gender" value="female">
+  <label for="female">Female</label><br>
+  <input type="radio" id="other" name="gender" value="other">
+  <label for="other">Other</label>
+       <br/><br/>
+      
+      
+      <label for="dropdown"><b>Select Flying Class</b></label>
+<select id="dropdown" placeholder="Flying Class">
+  <option value="" selected disabled hidden>Choose from dropdown list</option>
+  <option value="volvo">Economy Class</option>
+  <option value="saab">Business Class</option>
+</select>
+     <br/><br/>
+      <label id="exp"><b>Rate your Flying Experience</b></label><br/>
+       <input type="radio" id="one" name="exp" value="1">
+  <label for="one">1</label>
+  <input type="radio" id="two" name="exp" value="2">
+  <label for="two">2</label>
+  <input type="radio" id="three" name="exp" value="3">
+  <label for="three">3</label>
+      <input type="radio" id="four" name="exp" value="4">
+  <label for="four">4</label>
+      <input type="radio" id="five" name="exp" value="5">
+  <label for="five">5</label><br>
+     
+       <br/><br/>
+      
+            
+      <legend><b>What features did you enjoy?</b></legend>      
+      <input type="checkbox" name="features" value="Boarding Services">Boarding Services<br>
+      <input type="checkbox" name="features" value="Comfortable Seats">Comfortable Seats<br>      
+      <input type="checkbox" name="features" value="Food and Beverages">Food and Beverages<br>      
+      <input type="checkbox" name="features" value="Leg Space">Leg Space<br>
+      <input type="checkbox" name="features" value="On-board Service">On-board Service<br>  
+      <input type="checkbox" name="features" value="Medical Assistance">Medical Assistance<br>
+       
+            <br/><br/>
+    <legend><b>What features would you like to see improvement in?</b></legend>      
+      <input type="checkbox" name="improv" value="Tickets and Refunds">Tickets and Refunds<br>
+      <input type="checkbox" name="improv" value="Boarding Services">Boarding Services<br>     
+      <input type="checkbox" name="improv" value="Food and Beverages">Food and Beverages<br>      
+      <input type="checkbox" name="improv" value="Ambience">Ambience<br>
+      <input type="checkbox" name="improv" value="On-board Service">On-board Service<br>  
+      <input type="checkbox" name="improv" value="Medical Assistance">Medical Assistance<br>
+          <br/><br/> 
+      
+ 
+  <label for="yes_no_radio"><b>Would you recommend us for air travel?</b></label>
+
+<input type="radio" value="Yes" name="yes_no" checked>Yes</input>
+<input type="radio" value="No" name="yes_no">No</input>
+
+
+      
+      
+      <br/><br/>
+      <label for="message"><b>Additional Comments</b></label><br/>
+   <textarea id="message" cols="50" rows="5" 
+             placeholder="Please enter any additional comments">  </textarea>
+ <br/><br/>
+      <button type="submit" id="submit" form="survey-form" value="Submit">Submit Feedback</button>
+     </div>
+    </form>
+<br/><br/>  
+<footer>A freeCodeCamp project by <a id="AS" href="https://codepen.io/ananya2407">Ananya Sajwan</a></footer>
+</body>
+</html>
