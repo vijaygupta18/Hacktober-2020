@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org" xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
+    <head lang="en">
+        <meta charset="UTF-8"/>
+        <title>URL Compactor</title>
+        <link href="css/bootstrap.min.css" rel="stylesheet"></link>
+        <link href="css/uc.css" rel="stylesheet"></link>
+        <link href="css/font-awesome.min.css" rel="stylesheet"></link>
+        <script src="js/jquery-3.2.1.min.js"></script>
+    </head>
+    <body>
+        <div id = "uc-container">
+            <h1>URL Compactor Web App</h1>
+
+            <p class="lead">Make your URLs to look pretty and short</p>
+            <div class="form-group">
+                <form method="post" id ="uc-compact-url" action = "rest/urls/compact"> <!-- TODO: make action rel url to be calculated dynamicly based on the rest prefix -->
+                    <div id = "uc-compact-url-controls">
+                        <label id = "uc-compact-url-input-label" for = "url">Paste URL here: </label>
+                        <input type="text" class="form-control" id = "url" name="url" placeholder="https://www.reddit.com/r/gravityfalls/"/>
+                        <button id = "uc-compact-url-button" type="submit" class="btn btn-default">Compact</button>
+                    </div>
+                </form>
+            </div>
+            <div id = "uc-shortened-urls-container" hidden = "hidden">
+                <a id = "uc-shortened-url" href = "" target="_blank">N/A</a>
+            </div>
+            <div id = "uc-error-msg-container" hidden = "hidden">
+                <p id = "uc-error-msg"></p>
+            </div>
+            <div id = "uc-top-n-visited">
+                <p id = "uc-top-n-visited-title">Here's the top 3 visited URLs:</p>
+                <span id = "uc-top-n-visited-dummy">No history yet.. Your URL can be here</span>
+                <ul id = "uc-top-n-visited-list" class="list-group">
+                </ul>
+            </div>
+
+            <script type="text/javascript">
+                $(document).ready(function() {
+                    function onError(data) {
+                        $('#uc-error-msg-container').show();
+                        $('#uc-shortened-urls-container').hide();
+                        if (data.error) {
+                            console.log(data.error);
+                            $('#uc-error-msg').text(data.error);
+                        } else {
+                            $('#uc-error-msg').text(data.toString());
+                        }
+                    }
+
+                    function populateTopNVisited() {
+                        $.ajax({
+                            type: "GET",
+                            url: 'rest/stat/top?count=3',
+                            success: function(data) {
+                                if (data.length > 0) {
+                                    $('#uc-top-n-visited-dummy').hide();
+                                } else {
+                                    $('#uc-top-n-visited-dummy').show();
+                                }
+                                var list = $('#uc-top-n-visited-list');
+                                $.each( data, function( key, dataItem ) {
+                                    var item = $('<li class = "list-group-item"></li>');
+                                    var spanCount = $('<span class = "uc-top-visited-link-item-visit-count-label"></span>');
+                                    spanCount.text(' (' + dataItem.visitCount + '  visits)   ');
+
+                                    var link = $('<a target = "_blank" class = "uc-top-visited-link-item"></a>');
+                                    link.text(dataItem.shortLink);
+                                    link.attr('href', dataItem.shortLink);
+
+                                    item.append(spanCount);
+                                    item.append(link);
+
+                                    list.append(item);
+                                });
+                            },
+                            error: function(data) {
+                                console.error(data);
+                            }
+                        });
+                    }
+
+                    $("#uc-compact-url").submit(function(event) {
+                        $.ajax({
+                            type: "POST",
+                            url: $("#uc-compact-url").attr('action'),
+                            data: $("#uc-compact-url").serialize(),
+                            success: function(data) {
+                                if (data.success == true) {
+                                    $('#uc-error-msg-container').hide();
+                                    $('#uc-shortened-urls-container').show();
+
+                                    $('#uc-shortened-url').text(data.shortLink);
+                                    $('#uc-shortened-url').attr('href', data.shortLink);
+                                } else {
+                                    onError(data);
+                                }
+                            },
+                            error: function(data) {
+                                onError(data);
+                            }
+                        });
+                        event.preventDefault();
+                    });
+
+                    populateTopNVisited();
+                });
+            </script>
+
+        </div>
+    </body>
+</html>
