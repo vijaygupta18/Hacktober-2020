@@ -1,3 +1,4 @@
+//doing this for t-shirt
 const container = document.querySelector(".container");
 const text = document.querySelector("#text");
 const totalTime = 7500;
