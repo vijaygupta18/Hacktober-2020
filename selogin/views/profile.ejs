@@ -1,0 +1,59 @@
+<%- include("partials/header") %>
+
+<div class="mbody container">
+  <% if(success && success.length>0) {%>
+  <div class="alert alert-success">
+    <%=success%>
+  </div>
+  <% } %>
+  <% if(error && error.length>0) {%>
+  <div class="alert alert-danger">
+    <%=error%>
+  </div>
+  <% } %>
+
+  <form> 
+    <div class="form-group row">
+      <label for="username" class="col-4 col-form-label">Username</label> 
+      <div class="col-8">
+        <input id="username" name="username" value="<%=currentUser.username%>" class="form-control here" required="required" type="text" disabled>
+      </div>
+    </div>
+    <div class="form-group row">
+      <label for="email" class="col-4 col-form-label">Email</label> 
+      <div class="col-8">
+        <input id="email" name="email" value="<%=currentUser.email%>" required="required" class="form-control here" type="text" disabled>
+      </div>
+    </div>
+    <div class="form-group row">
+      <label for="name" class="col-4 col-form-label">First Name</label> 
+      <div class="col-8">
+        <input id="name" name="firstName" value="<%=currentUser.firstName%>" class="form-control here" type="text" disabled>
+      </div>
+    </div>
+    <div class="form-group row">
+      <label for="lastname" class="col-4 col-form-label">Last Name</label> 
+      <div class="col-8">
+        <input id="lastname" name="lastName" value="<%=currentUser.lastName%>" class="form-control here" type="text" disabled>
+      </div>
+    </div>
+    <div class="form-group row">
+        <label class="col-4 col-form-label">Role</label> 
+        <div class="col-8">
+            <% if (currentUser.isAdmin) { %>
+                <input class="form-control here" value="Administrator" type="text" disabled>
+            <% } else { %>
+                <input class="form-control here" value="Normal User" type="text" disabled>
+            <% } %> 
+        </div>
+      </div>
+    <div class="form-group row">
+      <div class="col-8">
+        <a class="btn btn-outline-secondary float-left" onClick="history.back()">Back</a>
+      </div>
+    </div>
+  </form>
+
+</div>
+
+<%- include("partials/footer") %>
