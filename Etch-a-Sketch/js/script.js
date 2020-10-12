@@ -1,3 +1,4 @@
+//doing this for t-shirt
 const container = document.getElementById('container');
 let colorMode = "custom";
 
