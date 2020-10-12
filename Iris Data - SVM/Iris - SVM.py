@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 # coding: utf-8
-
+#doing this for t-shirt
 # # Iris Dataset - SVM
 
 # In[2]:
