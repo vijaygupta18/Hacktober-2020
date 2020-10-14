@@ -1,5 +1,5 @@
 import java.util.Scanner;
-public class Prog4
+public class DiamondPattern
 {
 public static void main(String[] args)    
 {
