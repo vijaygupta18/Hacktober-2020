@@ -1,0 +1,8 @@
+.idea
+*.iml
+*.class
+.idea\vcs.xml
+.mvn
+**/target
+**/generated
+
