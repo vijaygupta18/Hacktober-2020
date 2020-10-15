@@ -1,8 +1,8 @@
-$(document).ready(function() {
+$(document).ready(function () {
 
     $("#list-items").html(localStorage.getItem("listItems"));
 
-    $(".add-items").submit(function(event) {
+    $(".add-items").submit(function (event) {
         event.preventDefault();
 
         var item = $("#todo-list-item").val();
@@ -13,7 +13,7 @@ $(document).ready(function() {
         }
 
     });
-    $(document).on("change", ".checkbox", function() {
+    $(document).on("change", ".checkbox", function () {
 
         if ($(this).attr("checked")) {
             $(this).removeAttr("checked");
@@ -25,9 +25,22 @@ $(document).ready(function() {
         localStorage.setItem("listItems", $("#list-items").html());
     })
 
-    $(document).on("click", ".remove", function() {
-        $(this).parent().fadeOut("slow", function() { remove() });
+    $(document).on("click", ".remove", function () {
+        $(this).parent().fadeOut("slow", function () { remove() });
         localStorage.setItem("listItems", $("#list-items").html());
     })
 
+    getCurrentDate();
+
 });
+
+
+
+//Functon to get current date, time and to display in the top page using moment js
+function getCurrentDate() {
+
+    var currentDate = moment().format('dddd, MMMM Do YYYY');
+    $("#todayDate").text(currentDate);
+    return (currentDate);
+
+}
