@@ -1,0 +1,8 @@
+# Default ignored files
+/shelf/
+/workspace.xml
+# Datasource local storage ignored files
+/../../../../../../../../../../:\Users\lmatu\Documents\Universidad_Politecnica_de_Chiapas\7.-Septimo_Cuatrimestre\Programacion_concurrente\Codigos\ProyectoSemaforo\.idea/dataSources/
+/dataSources.local.xml
+# Editor-based HTTP Client requests
+/httpRequests/
