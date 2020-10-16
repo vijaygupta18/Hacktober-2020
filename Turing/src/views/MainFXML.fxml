@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="anchorPane" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.MainController">
+   <children>
+      <Button fx:id="startButton" layoutX="256.0" layoutY="144.0" mnemonicParsing="false" onAction="#verifyInput" style="-fx-border-radius: 16; -fx-background-color: black; -fx-border-color: white; -fx-text-fill: white;" text="Verify input">
+         <font>
+            <Font name="Berlin Sans FB" size="14.0" />
+         </font>
+      </Button>
+      <Label layoutX="224.0" layoutY="1.0" text="Turing Machine" textFill="WHITE">
+         <font>
+            <Font name="Berlin Sans FB" size="24.0" />
+         </font>
+      </Label>
+      <TextField fx:id="inputField" layoutX="225.0" layoutY="103.0" style="-fx-border-color: WHITE; -fx-border-radius: 16;" />
+      <Label layoutX="256.0" layoutY="71.0" text="Input string:" textFill="WHITE">
+         <font>
+            <Font name="Berlin Sans FB" size="18.0" />
+         </font>
+      </Label>
+      <Button fx:id="resetButton" layoutX="536.0" layoutY="372.0" mnemonicParsing="false" onAction="#restartProgram" style="-fx-border-radius: 16; -fx-background-color: black; -fx-border-color: white; -fx-text-fill: white;" text="Restart">
+         <font>
+            <Font name="Berlin Sans FB" size="14.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
