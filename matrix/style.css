@@ -1,0 +1,90 @@
+body{
+    font-size: 16px;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+h1{
+    font-size: 20pt;
+    text-align: center;
+    margin-top: 40px;
+    color: rgb(104, 97, 97);
+}
+
+header p{
+    text-align: center;
+    color: rgb(104, 97, 97);
+}
+
+.matrix{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-self: center; 
+    margin-top: 50px;
+    
+  }
+              
+.linhas{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; 
+    grid-template-rows: 1fr 1fr 1fr;
+    width: 150px;
+    margin-bottom: 20px; 
+    background-color: aliceblue;   
+    }
+
+.elements{
+     border: 1px solid rgb(46, 57, 207);
+     padding: 8px;
+     height: 30px;
+    }
+
+.pink{
+    background-color: pink;
+}
+.green{
+    background-color: rgba(130, 233, 45, 0.705);
+}
+
+.hide{
+  visibility: hidden;
+  opacity: 0;
+}
+
+#result{
+    margin-top: 40px;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.568);    
+    transition: 400ms;
+}
+
+
+.buttons{
+    margin-top: 20px;
+}
+
+button{
+    background-color: #948e8e;
+    color: white;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 8px;
+    width: 140px;
+    cursor: pointer;
+    transition: 500ms;
+}
+
+button:hover{
+    background-color: #3f3a3a;
+}
+
+footer{
+    font-size: 12px;
+    margin-top: 90px;
+    color: rgb(104, 97, 97);
+    text-shadow: 1px 1px 5px grey;
+    text-align: right;
+}

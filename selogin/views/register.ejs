@@ -1,0 +1,105 @@
+<%- include("partials/header") %>
+
+<div class="mbody container">
+  <% if(success && success.length>0) {%>
+  <div class="alert alert-success">
+    <%=success%>
+  </div>
+  <% } %>
+  <% if(error && error.length>0) {%>
+  <div class="alert alert-danger">
+    <%=error%>
+  </div>
+  <% } %>
+</div>
+
+<div class="container">
+	<div class="row">
+		<div class="col-md-3 ">
+      <div class="list-group ">
+        <a href="/dashboard" class="list-group-item list-group-item-action">User and Data Management</a>
+        <a href="" class="list-group-item list-group-item-action active">Add Users</a>
+      </div> 
+    </div>
+		<div class="col-md-9">
+      <%if(currentUser.isAdmin){%>
+        <div class="card">
+          <div class="card-body">
+              <div class="row">
+                  <div class="col-md-12">
+                      <h4>Add a user</h4>
+                      <hr>
+                  </div>
+              </div>
+              <div class="row">
+                  <div class="col-md-12">
+                      <form action="/dashboard/createuser" method="POST"> 
+                            <div class="form-group row">
+                              <label for="username" class="col-4 col-form-label">User Name*</label> 
+                              <div class="col-8">
+                                <input id="username" name="username" placeholder="Username" class="form-control here" required="required" type="text">
+                              </div>
+                            </div>
+                            <div class="form-group row">
+                              <label for="email" class="col-4 col-form-label">Email*</label> 
+                              <div class="col-8">
+                                <input id="email" name="email" placeholder="Email" required="required" class="form-control here" type="text">
+                              </div>
+                            </div>
+                            <div class="form-group row">
+                              <label for="name" class="col-4 col-form-label">First Name</label> 
+                              <div class="col-8">
+                                <input id="name" name="firstName" placeholder="First Name" class="form-control here" type="text">
+                              </div>
+                            </div>
+                            <div class="form-group row">
+                              <label for="lastname" class="col-4 col-form-label">Last Name</label> 
+                              <div class="col-8">
+                                <input id="lastname" name="lastName" placeholder="Last Name" class="form-control here" type="text">
+                              </div>
+                            </div>
+                            <div class="form-group row">
+                              <label for="pass" class="col-4 col-form-label">Password*</label> 
+                              <div class="col-8">
+                                <input id="pass" name="password" placeholder="Password" class="form-control here" required="required" type="password">
+                              </div>
+                            </div>
+                            <div class="form-group row">
+                              <label for="pass" class="col-4 col-form-label">Confirm Password*</label> 
+                              <div class="col-8">
+                                <input id="pass" name="confirmpassword" placeholder="Password" class="form-control here" required="required" type="password">
+                              </div>
+                            </div>
+                            <div class="form-group row">
+                              <label for="role" class="col-4 col-form-label">Role*</label> 
+                              <div class="col-8">
+                                <select id="role" name="role" class="custom-select">
+                                  <option value="admin">Administrator</option>
+                                  <option value="user">Normal User</option>
+                                </select>
+                              </div>
+                            </div> 
+                            <div class="form-group row">
+                              <div class="offset-4 col-8">
+                                <button name="submit" type="submit" class="btn btn-primary">Add a user</button>
+                              </div>
+                            </div>
+                      </form>
+                  </div>
+              </div>
+              
+          </div>
+      </div>
+        <%} else { %>
+        <div class="alert alert-danger" role="alert">
+          Dear <%=currentUser.username%>, you shouldn't be here.
+        </div>
+        <a class="btn btn-outline-secondary" onClick="history.back()">Back</a>
+        <% } %>
+
+		    
+		</div>
+	</div>
+</div>
+
+<%- include("partials/footer") %>

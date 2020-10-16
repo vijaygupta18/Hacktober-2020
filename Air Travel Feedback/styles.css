@@ -1,0 +1,122 @@
+body{
+  text-align: center;
+}
+
+#background {
+  background: url('https://wallpaperaccess.com/full/1307297.jpg');
+  background-color: #f2f2f2;
+  padding: 0px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.container{
+  text-align:left; 
+  display:flex; 
+  flex-direction:column; 
+  align-items:center; 
+  justify-content:center; 
+  margin: auto;
+  padding-left: 50px;
+  padding: 10px;
+  border: 5px solid #92a8d1;
+  height: auto;
+  width: 800px;
+background: linear-gradient(to left, #91EAE4, #86A8E7, #7F7FD5);
+opacity:0.9;
+
+}
+
+#title{
+  font-family: Impact, Charcoal, sans-serif;
+  font-size: 50px;
+}
+
+#description{
+  font-family: Impact, Charcoal, sans-serif;
+  font-size: 25px;
+}
+
+form{
+  font-family: Tahoma, Geneva, sans-serif;
+  font-size: 18px;
+}
+
+input[type=text], select{
+  width: 50%; 
+  padding: 12px; 
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; 
+  margin-top: 6px; 
+  margin-bottom: 16px; 
+  resize: vertical;
+}
+
+input[type=email]{
+  width: 50%; 
+  padding: 12px; 
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; 
+  margin-top: 6px; 
+  margin-bottom: 16px; 
+  resize: vertical;
+}
+
+input[type=textarea]{
+  width: 100% !important;
+}
+
+input[type=number]{
+  width: 50%; 
+  padding: 12px; 
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; 
+  margin-top: 6px; 
+  margin-bottom: 16px; 
+  resize: vertical;
+}
+
+
+input[type=checkbox]{
+ vertical-align: middle;
+ position: relative;
+ bottom: 1px; 
+ float:middle;
+ margin-right:0px;
+}
+
+button[type=submit] {
+  padding-left: 200px;
+  text-align: center !important;
+  display: flex;
+  float: center;
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+
+button[type=submit]:hover {
+ 
+  background-color: #45a049;
+}
+
+
+
+#AS{
+  color: black;
+}
+footer{
+  text-align: center;
+  text-decoration: none;
+  color: black;
+  font-family: Impact, fantasy;
+  padding-bottom: 10px;
+}
+

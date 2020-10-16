@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.github.florent37.arclayout.ArcLayout
+            android:id="@+id/arc_top"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            app:arc_cropDirection="cropOutside"
+            app:arc_position="bottom"
+            app:arc_height="90dp"
+            android:elevation="5dp"
+            >
+
+            <ImageView
+                android:id="@+id/bg_image_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:src="@drawable/bg" />
+
+            <LinearLayout
+                android:id="@+id/details_linear_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/user_profile_pic"
+                android:layout_width="80dp"
+                android:layout_height="85dp"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/user" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:id="@+id/name_text_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Name"
+                    android:textSize="13sp"
+                    android:layout_margin="4dp"
+                    android:layout_gravity="center_horizontal"
+                    android:textColor="#EEEEEE"/>
+
+                <TextView
+                    android:id="@+id/email_text_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Email"
+                    android:layout_margin="4dp"
+                    android:textSize="13sp"
+                    android:layout_gravity="center_horizontal"
+                    android:textColor="#EEEEEE"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal">
+
+                    <TextView
+                        android:id="@+id/organization_text_view"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Organization"
+                        android:textSize="13sp"
+                        android:layout_margin="4dp"
+                        android:textColor="#EEEEEE"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=" | "
+                        android:textSize="13sp"
+                        android:layout_margin="4dp"/>
+
+                    <TextView
+                        android:id="@+id/location_text_view"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Location"
+                        android:textSize="13sp"
+                        android:layout_margin="4dp"
+                        android:textColor="#EEEEEE"/>
+
+                </LinearLayout>
+            </LinearLayout>
+            </LinearLayout>
+
+        </com.github.florent37.arclayout.ArcLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_below="@id/arc_top">
+
+            <android.support.design.widget.TabLayout
+                android:id="@+id/tabs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/fragment_container"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

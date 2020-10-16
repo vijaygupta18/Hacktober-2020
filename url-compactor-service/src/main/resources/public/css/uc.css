@@ -1,0 +1,45 @@
+#uc-container {
+    margin-left: 35%;
+}
+
+#uc-compact-url-input-label {
+    display: inline-block;
+}
+
+#url {
+    display: inline-block;
+    width: 50%;
+}
+
+#uc-top-n-visited-list {
+    width: 40%;
+}
+
+#uc-compact-url-controls {
+    display: inline-block;
+}
+
+#uc-compact-url-button {
+    float: right;
+    display: inline-block;
+    width: 20%;
+}
+
+#uc-error-msg {
+    color: red;
+    font-weight: bold;
+}
+
+.uc-top-visited-link-item {
+    font-weight: bold;
+}
+
+.uc-top-visited-link-item-visit-count-label {
+    font-weight: bold;
+    color: navy;
+}
+
+#uc-top-n-visited-dummy {
+    font-style: italic;
+    color: #778899;
+}

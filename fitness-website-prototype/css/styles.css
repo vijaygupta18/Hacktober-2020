@@ -1,0 +1,281 @@
+body{
+   font-family: Futura;
+}
+h1 { font-family: Futura;
+  font-size: 70px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 400;
+  line-height: 85px;
+}
+h2 { font-family: Futura;
+  font-size: 59px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 400;
+  line-height: 60px;
+}
+p { font-family: Futura;
+  font-size: 23px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 400;
+  line-height: 40px;
+}
+h3 { font-family: Futura;
+  font-size: 28px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 400;
+  line-height: 8px;
+  color: #555555
+}
+
+.bg {
+  background: url(../image_assets/bg1.png) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-color: black;
+
+}
+.bg2 {
+  background: url(../image_assets/bg2.png) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-color: black;
+
+}
+.bg3{
+  background: url(../image_assets/jumbotron.png) center ;
+  background-repeat: no-repeat;
+  height: 400px;
+  background-size: cover;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: transparent;
+}
+
+li {
+  float: right;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 22px 27px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: rgba(255,255,255,0.1);
+}
+
+@media (min-width: 768px){
+.heading{
+  color: white;
+  padding-left: 100px;
+  padding-top: 100px;
+}
+.but{
+  padding-left: 100px;
+}
+}
+
+@media (max-width: 768px) {
+.heading{
+    color: white;
+    text-align: center;
+    padding-top: 100px;
+
+}
+.but{
+  text-align: center;
+}
+}
+
+.myButton{
+    background:url(../sketch_assets/button2.png) no-repeat;
+    cursor:pointer;
+    border:none;
+    width:366px;
+    height:78px;
+}
+.myButton:hover {
+     background:url(../sketch_assets/button2active.png) no-repeat;
+}
+
+
+
+@media (min-width: 768px){
+.heading2{
+  color: white;
+  padding-left: 100px;
+  padding-top: 150px;
+}
+
+}
+
+@media (max-width: 768px) {
+.heading2{
+    color: white;
+    text-align: center;
+    padding-top: 35px;
+    font-size: 40px;
+    line-height: 50px;
+
+}
+}
+.myButton1{
+    background:url(../sketch_assets/range1.png) no-repeat;
+    cursor:pointer;
+    border:none;
+    width:366px;
+    height:78px;
+}
+.myButton1:hover {
+     background:url(../sketch_assets/range1active.png) no-repeat;
+}
+.myButton2{
+    background:url(../sketch_assets/range2.png) no-repeat;
+    cursor:pointer;
+    border:none;
+    width:366px;
+    height:78px;
+}
+.myButton2:hover {
+     background:url(../sketch_assets/range2active.png) no-repeat;
+}
+.myButton3{
+    background:url(../sketch_assets/range3.png) no-repeat;
+    cursor:pointer;
+    border:none;
+    width:366px;
+    height:78px;
+}
+.myButton3:hover {
+     background:url(../sketch_assets/range3active.png) no-repeat;
+}
+.myButton4{
+    background:url(../sketch_assets/range4.png) no-repeat;
+    cursor:pointer;
+    border:none;
+    width:366px;
+    height:78px;
+}
+.myButton4:hover {
+     background:url(../sketch_assets/range4active.png) no-repeat;
+}
+
+.range{
+padding-top: 23px;
+}
+
+
+
+@media (min-width: 768px){
+  #col-1 {
+    position: relative;
+    width: 50%;
+    float: left;
+    height: 100%;
+    z-index: 1010101010
+  }
+
+  #col-2 {
+    position: relative;
+    width: 50%;
+    float: left;
+    height: 100%;
+    z-index: 1010101010;
+    padding-top: 160px;
+
+  }
+
+  h2{
+    padding-top: 70px;
+    color: white;
+    text-align: center;
+  }
+p{
+  color: #B3B3B3;
+  text-align: center;
+}
+.jb-after{
+  margin-top: 140px;
+}
+
+
+}
+
+@media (max-width: 768px) {
+.align-buttons{
+text-align: center;
+}
+
+h2{
+  padding-top: 30px;
+  color: white;
+  text-align: center;
+  font-size: 43px;
+
+}
+p{
+  color: #B3B3B3;
+  text-align: center;
+  font-size: 20px;
+}
+
+.jb-after{
+  margin-top: 110px;
+}
+}
+.container{
+  padding-left: 40px;
+  padding-right: 40px;
+}
+.logo{
+	height: 60px;
+}
+.box{
+  border: 0.1px rgba(0,0,0,0.4);
+  background-color: rgba(0,0,0,0.4);
+  border-radius: 5px;
+}
+.footer-text{ color: grey; text-shadow: 0 1px rgba(0, 0, 0, 0.5);}
+.responsive-nav {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 250px;
+  background: #f8f8f8;
+  transition: margin 0.2s ease-out;
+  border: 1px solid #cccccc;
+}
+.responsive-nav.collapsed {
+  margin-left: -250px;
+}
+.hamburger {
+  display: block;
+  height: 30px;
+  width: 30px;
+  padding: 15px;
+  text-align: center;
+  position: relative;
+  left: 30px;
+}
+.navbar-fixed-top.scrolled {
+  background-color: rgba(0, 0, 0, 1); !important;
+  transition: background-color 200ms linear;
+  position: fixed; /* Set the navbar to fixed position */
+top: 0; /* Position the navbar at the top of the page */
+width: 100%;
+}

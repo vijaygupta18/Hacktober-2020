@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Pixel Art Maker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+            <h1>
+                PIXEL ART MAKER
+            </h1>
+            <hr>
+        </header>
+    <section>
+        <div class="form-group">
+                Number of rows: &nbsp;&nbsp; <input type="number" name="num1" id="num1" max=45 min=0>&nbsp;&nbsp;
+                Number of columns:&nbsp;&nbsp; <input type="number" name="num2" id="num2" max=35 min=0>&nbsp;&nbsp;
+                Choose your color:&nbsp;&nbsp;
+                <input type="color" id="color-picker" >
+        </div>
+    </section>
+    <br>
+    <div class="buttons">
+        <center>
+                <button id="get-grid" >Get grid</button>
+                <button id="clr-grid" >Clear grid</button>        
+        </center>
+            </div>
+    <center>
+    <div id="output"></div>
+    </center>
+    
+   
+    <script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+    <script src="app.js"></script>
+</body>
+</html>

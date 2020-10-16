@@ -1,0 +1,24 @@
+<%- include("partials/header") %>
+
+
+
+<div class="container mbody">
+  <% if(success && success.length>0) {%>
+  <div class="alert alert-success d-flex">
+    <%=success%>
+  </div>
+  <br>
+  <% } %>
+  <% if(error && error.length>0) {%>
+  <div class="alert alert-danger d-flex">
+    <%=error%>
+  </div>
+  <br>
+  <% } %>
+  <h1 class="h1">Hello <%= currentUser.username %>. This is the homepage. </h1>
+  <br>
+  <!-- <a class="btn btn-lg btn-outline-info" href="/all">See all</a> -->
+
+</div>
+
+<%- include("partials/footer") %>

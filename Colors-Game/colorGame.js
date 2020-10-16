@@ -1,3 +1,4 @@
+//doing this for t-shirt
 var colors = [];
 var backgroundColor = "#00141a";
 

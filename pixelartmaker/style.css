@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css?family=Mali');
+@import url('https://fonts.googleapis.com/css?family=Niramit');
+body {
+    background: #fcc;
+    font-family: 'Niramit',sans-serif;
+}
+header {
+    text-align : center;
+    font-family: 'Mali',sans-serif;
+}
+.form-group {
+    display: inline-flex;
+    margin : 0 22%;
+}
+.buttons button{
+    padding: 1em;
+    border-radius: 10px;
+    cursor: pointer;
+    outline: 0;
+    
+}
+input[type=number]{
+    border: 0;
+    border-bottom: 1px solid #333;
+    background: transparent;
+    box-shadow: 0 2px 0  #333;
+    text-align: center;
+}
+input[type=color] {
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px 0 #3333
+}
+.box{
+    width:1px;
+    height:1px;
+    padding:18px;
+    border: 1px solid black;
+    display : inline-flex;
+    cursor: pointer;
+}

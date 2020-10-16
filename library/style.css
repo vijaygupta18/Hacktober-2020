@@ -1,0 +1,124 @@
+
+.root {
+    height: calc(100% - 57px);
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 5px 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    margin: 0;
+    font-family: Linux Libertine,Hoefler Text,Georgia,Times New Roman,Times,serif;
+    background-color: #dfdfdf;
+}
+
+
+h3, small {
+    margin: 3px 0 7px 0;
+}
+
+.status {
+    position: absolute;
+    bottom: 10px;
+    right: 25px;
+    border: 1px solid;
+    border-color: #8BC34A;
+    background-color: #8BC34A;
+    border-radius: 5px;
+    padding: 2px;
+    cursor: pointer;
+}
+.status:hover {
+    box-shadow: 0 0 11px rgba(33,33,33,1);
+}
+
+.book-card {
+    width: 70%;
+    border-radius: 24px;
+    padding: 15px;
+    position: relative;
+    margin: 5px auto;
+    box-shadow: 0 0 11px rgba(33,33,33,.3);
+}
+
+.remove-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    border: 1px solid;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    border-radius: 50%;
+    font-weight: 800;
+    cursor: pointer;
+}
+
+.library {
+    height: 100%;
+    width: 50%;
+    padding: 20px;
+    box-sizing: border-box;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+}
+
+.new-book {
+    height: 100%;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.header {
+    text-align: center;
+    background-color: #03A9F4;
+    margin: 0;
+    padding: 15px;
+}
+
+#new-book-form {
+	position: relative;
+	margin: 0 auto;
+	padding: 30px;
+	box-sizing: border-box;
+	background-color: #03a9f4;
+	border-radius: 5px;
+    width: 100%;
+	color: #1f2121;
+}
+
+#new-book-form > * { display: block; }
+#new-book-form label { margin-bottom: 10px; }
+#new-book-form label:not(:first-child) { margin-top: 20px; }
+#new-book-form input[type="text"],
+#new-book-form input[type="number"] {
+	box-sizing: border-box;
+	width: 100%;
+	font-family: 'Piazzolla', serif;
+	font-weight: 200;
+	font-style: italic;
+	font-size: 20px;
+	background-color: #EEE7DF;
+	color: #222;
+	border-radius: 5px;
+	border: none;
+    padding: 10px;
+}
+#new-book-form button {
+	background-color: #8BC34A;
+	border-radius: 5px;
+	padding: 5px 20px 7px;
+	margin-top: 50px;
+    box-shadow: 0 5px 8px rgba(0,0,0,0.25);
+    border: 0;
+    cursor: pointer;
+}

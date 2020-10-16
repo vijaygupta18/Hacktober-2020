@@ -1,0 +1,104 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  font-family: "Montserrat", sans-serif;
+}
+body {
+  background: #feceab;
+  background-image: url("https://www.transparenttextures.com/patterns/crissxcross.png");
+  /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+  padding: 0 16px;
+}
+
+header {
+  background-color: #e84a5f;
+  min-width: 100%;
+  margin: auto -16px;
+  padding: 20px 32px;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+}
+
+header h1 {
+  color: #fff;
+  font-family: "McLaren", cursive;
+  font-weight: 300;
+}
+
+footer {
+  position: absolute;
+  text-align: center;
+  bottom: 0;
+  width: 100%;
+}
+
+footer p {
+  color: #ff847c;
+}
+.note {
+  position: relative;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+  padding: 30px 20px;
+  width: 340px;
+  margin: 16px;
+  float: left;
+}
+.note h1 {
+  font-size: 1.1em;
+  margin-bottom: 6px;
+}
+.note p {
+  font-size: 1.1em;
+  margin-top: 10px;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+.create-note {
+  position: relative;
+  box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.6);
+  width: 480px;
+  background-color: white;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 30px auto 20px auto;
+}
+.create-note input,
+.create-note textarea {
+  border: none;
+  resize: none;
+  padding: 10px;
+  width: 100%;
+  outline: none;
+  font-size: 1.5rem;
+}
+
+.create-note button {
+  position: absolute;
+  right: 10px;
+  bottom: -30px;
+  width: 45px;
+  height: 45px;
+  border: none;
+  outline: none;
+  border-radius: 50%;
+  color: #fff;
+  background-color: #ff847c;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  transition: all 1s ease-in-out;
+}
+
+.note .delete {
+  color: #e84a5f;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  position: relative;
+  float: right;
+}

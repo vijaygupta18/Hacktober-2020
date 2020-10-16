@@ -1,0 +1,270 @@
+* {
+  margin:0;
+  padding:0;
+}
+
+body, html {
+  height:100%;
+  font-family: Montserrat;
+}
+
+.banner {
+  background: url("banner.jpg");
+  height:100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.container {
+  width:80%;
+  margin:auto;
+}
+
+
+.content {
+  overflow: visible;
+  position: relative;
+}
+
+.content:before {
+  content: "";
+  position: fixed;
+  left: 0;
+  right:0;
+  z-index: -1;
+
+  display: block;
+  background-image: url('banner.jpg');
+  background-size: cover;
+  width:100%;
+  height:100vh;
+
+  filter: blur(5px);
+
+}
+
+
+header {
+  width:100%;
+  background: rgb(63,94,251);
+  background: radial-gradient(circle, rgba(4, 173, 94, 0.8) 0%, rgb(70, 216, 252) 100%);
+  padding:15px;
+  border-bottom:2px solid dodgerblue;
+  border-radius:10px;
+  box-shadow:2px 2px 5px #333;
+}
+
+#site-name {
+  display:inline-block;
+  margin-top:5px;
+  font-size:1.6em;
+  font-weight:bolder;
+  color:white;
+}
+
+nav {
+  display:inline-block;
+  float:right;
+}
+
+nav li {
+  display:inline-block;
+  list-style-type: none;
+  padding:0px 6px;
+  margin-top: 11px;
+}
+
+nav a {
+  color:white;
+  padding:10px;
+  border-radius:7px;
+  box-shadow:2px 2px 5px #333;
+}
+
+nav a:hover {
+  box-shadow:none;
+  border:1px solid #CCC;
+}
+
+.active {
+  border:1px solid #CCC;
+  box-shadow: none;
+}
+
+.side-hover {
+  width:40%;
+  position:relative;
+  top:20%;
+  left:10%;
+  color:white;
+  font-size:30px;
+  padding:20px;
+  background:radial-gradient(circle, rgba(4, 173, 94, 0.8) 0%, rgb(70, 216, 252) 100%);
+  border-radius:20px;
+  border-left:2px solid pink;
+  border-bottom:2px solid pink;
+}
+
+.drag {
+  background: url("drag.jpg") no-repeat;
+  height:100vh;
+  background-position: center;
+  background-size: cover;
+}
+
+.contact {
+  padding: 30px;
+  background: rgb(63,94,251);
+background: radial-gradient(circle, rgba(124, 197, 41, 0.8) 0%, rgba(116,252,70,0.8) 100%);
+width:30%;
+border-radius:15px;
+border-right:2px solid pink;
+border-bottom:2px solid pink;
+position:relative;
+top:20%;
+left:20%;
+box-shadow:3px 3px 9px green;
+}
+
+#contact-header, #contact-desc {
+  color:white;
+  padding:10px;
+}
+
+#name, #email, #submit, textarea {
+  border:none;
+  border:1px solid rgba(97, 230, 70, 0.808);
+  padding:10px;
+  margin:5px;
+  border-radius:5px;
+}
+
+#name, #email, textarea {
+  width:80%;
+}
+
+#submit {
+  padding:15px;
+  background-color: white;
+  color:rgba(97, 230, 70, 0.808);
+  border:3px solid rgb(93, 216, 44);
+  font-weight: bold;
+}
+
+#submit:hover {
+  background: radial-gradient(circle, rgb(205, 218, 201) 0%, rgb(46, 224, 46) 100%);
+  color:white;
+  border:3px solid white;
+  cursor:pointer;
+}
+
+#name:focus, #email:focus, textarea:focus {
+  outline: none;
+  border:none;
+  border-bottom:3px solid rgba(97, 230, 70, 0.808);
+  border-right:3px solid rgba(97, 230, 70, 0.808);
+  border-radius:10px;
+  box-shadow:2px 2px 4px #CCC;
+}
+
+.blog-wrapper {
+  width:75%;
+  max-width: 500px;
+  margin:20px auto;
+  background-color: #EEE;
+  padding:20px;
+  box-shadow: 3px 3px 9px black;
+}
+
+.blog-wrapper img {
+  width:100%;
+  overflow: hidden;
+}
+
+.blog-wrapper  h2 {
+  text-align: center;
+  margin:10px;
+}
+
+.blog-wrapper p {
+  margin:10px;
+  font-size: 0.9em;
+  height:100%;
+}
+
+@keyframes fade-in {
+    from{
+      opacity:0;
+      transform:translateX(-60px);
+    }
+    to {
+      opacity:1;
+    }
+}
+
+.side-hover p {
+  animation-name: fade-in;
+  animation-timing-function: ease-in;
+  animation-duration: 1s;
+  animation-fill-mode: both;
+}
+
+@media screen and (max-width: 930px) {
+  .contact {
+    left:30%;
+    width:40%;
+  }
+}
+
+@media screen and (max-width:710px) {
+  .contact {
+    left:17%;
+    width:60%;
+  }
+  .container {
+    width:100%;
+  }
+  header {
+    height:100px;
+    width:auto;
+  }
+  #site-name {
+    width:100%;
+    text-align: center;
+  }
+  nav {
+    width:100%;
+    text-align:center;
+  }
+  nav ul {
+    padding:0;
+    margin:15px;
+  }
+  .side-hover {
+    font-size: 20px;
+    padding:30px;
+  }
+}
+
+@media screen and (max-width:474px) {
+  .banner {
+    background-position:left;
+  }
+  .drag {
+    background-position:right;
+  }
+  .contact {
+    font-size:12px;
+    position:sticky;
+    margin:auto;
+    width:70%;
+    left:0;
+  }
+  .side-hover {
+    position:static;
+    margin:auto;
+    margin-top: 20%;
+    width:70%;
+  }
+}

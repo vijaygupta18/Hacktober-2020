@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">MyCredibleInfo</string>
+    <string name="mmm">Month</string>
+    <string name="yyyy">Year</string>
+</resources>

@@ -1,0 +1,75 @@
+
+body
+{
+ background-image: url("12.jpg");
+ background-color: #cccccc; 
+  height: 500px; 
+  background-position: right top;
+  background-repeat: no-repeat; 
+  background-size: cover;
+background-attachment: fixed;
+}
+
+.button {
+    background-color: #ddd;
+    border: none;
+    color: black;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 16px;
+}
+
+.button:hover {
+    background-color: #f1f1f1;
+}
+
+.container {
+  background-color : #AA5555;
+  //opacity: 0.8;
+  margin-top:20px;
+  border-radius: 4px;
+  padding : 5px;
+}
+
+.container .note {
+  background-color : #EEEEEE;
+  padding : 2px;
+  border-radius: 4px;
+  margin:2px;
+  width: 200px;
+}
+
+h1 {
+ color: #552222;
+ font-family: Times New Roman;
+}
+
+.textInput {
+background-color : #d2f2d3;
+  width: 600px;
+  height: 208px;
+  opacity: 0.6;
+border-radius: 6px;
+}
+
+.main {
+  padding-left : 500px;
+}
+
+.main div {
+   padding-top: 20px;
+   width: 650px;;
+}
+
+.main div button {
+ float:right;
+}
+div#messageDiv {
+	background-color : green;
+	
+    border-radius: 6px;
+}

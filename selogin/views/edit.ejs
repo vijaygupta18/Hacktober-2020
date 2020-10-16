@@ -1,0 +1,92 @@
+<%- include("partials/header") %>
+
+<div class="container mbody">
+  <% if(success && success.length>0) {%>
+  <div class="alert alert-success d-flex">
+    <%=success%>
+  </div>
+  <br>
+  <% } %>
+  <% if(error && error.length>0) {%>
+  <div class="alert alert-danger d-flex">
+    <%=error%>
+  </div>
+  <br>
+  <% } %>
+</div>
+<div class="mbody container jumbotron">
+  <div style="margin:2rem;">
+    <h1 style="text-align:center;">Edit <%= user.username %></h1>
+  </div>
+  <% if(currentUser.isAdmin){ %>%>
+  <div style="width:100%;">
+    <form action="/dashboard/<%= user._id %>?_method=PUT" method="POST"> 
+      <div class="form-group row">
+        <label for="username" class="col-4 col-form-label">User Name*</label> 
+        <div class="col-8">
+          <input id="username" name="username" value="<%=user.username%>" class="form-control here" required="required" type="text">
+        </div>
+      </div>
+      <div class="form-group row">
+        <label for="email" class="col-4 col-form-label">Email*</label> 
+        <div class="col-8">
+          <input id="email" name="email" value="<%=user.email%>" required="required" class="form-control here" type="text">
+        </div>
+      </div>
+      <div class="form-group row">
+        <label for="name" class="col-4 col-form-label">First Name</label> 
+        <div class="col-8">
+          <input id="name" name="firstName" value="<%=user.firstName%>" class="form-control here" type="text">
+        </div>
+      </div>
+      <div class="form-group row">
+        <label for="lastname" class="col-4 col-form-label">Last Name</label> 
+        <div class="col-8">
+          <input id="lastname" name="lastName" value="<%=user.lastName%>" class="form-control here" type="text">
+        </div>
+      </div>
+      <div class="form-group row">
+        <label for="pass" class="col-4 col-form-label">Password</label> 
+        <div class="col-8">
+          <input id="pass" name="password" placeholder="Password" class="form-control here" required="required" type="password">
+        </div>
+      </div>
+      <div class="form-group row">
+        <label for="pass" class="col-4 col-form-label">Confirm Password*</label> 
+        <div class="col-8">
+          <input id="pass" name="confirmpassword" placeholder="Password" class="form-control here" required="required" type="password">
+        </div>
+      </div>
+      <div class="form-group row">
+        <label for="role" class="col-4 col-form-label">Role</label> 
+        <div class="col-8">
+          <select id="role" name="role" class="custom-select">
+            <option value="admin">Administrator</option>
+            <option value="user">Normal User</option>
+          </select>
+        </div>
+      </div> 
+      <div class="form-group row">
+        <div class="offset-4 col-8">
+          <a class="btn btn-outline-secondary float-left" onClick="history.back()">Back</a>
+
+          <button name="submit" type="submit" class="btn btn-primary float-right">Update user</button>
+        </div>
+      </div>
+    </form>
+    <% if(user.username!=currentUser.username){%>
+      <form action="/dashboard/<%=user._id%>?_method=DELETE" method="POST">
+        <button class="btn btn-outline-danger float-right" type="submit" name="button">Delete</button>
+      </form>
+    <%}%>
+  </div>
+  <%} else { %>
+    <div class="alert alert-danger" role="alert">
+      Dear <%=currentUser.username%>, you don't have admin privileges to perform this task.
+    </div>
+    <a class="btn btn-outline-secondary"href="/vul">Back</a>
+
+  <% } %>
+
+</div>
+<%- include("partials/footer") %>

@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">DBMS Project</string>
+    <string name="title_activity_dashboard">MainActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Ship Couriers</string>
+    <string name="title_notifications">Edit Profile</string>
+</resources>

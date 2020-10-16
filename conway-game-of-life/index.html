@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Game of life</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="root">
+    <div class="grid"> </div>
+    <div class="control-panel">
+      <h3 class="title">Conway's Game of life</h3>
+      <button class="start-btn mar-btm">Start</button>
+      <div class="grid-dim mar-btm">
+        <label for="dimension">Grid Dimension</label>
+        <input type="number" id="dimension" value="100" min="50" max="100">
+        <button class="grid-dim-btn">Ok</button>
+      </div>
+      <div class="patterns-list mar-btm">
+        <label for="cars">Choose a patterns:</label>
+        <select class="raius-brdr" name="patterns" id="patterns">
+        </select>
+      </div>
+    </div>
+  </div>
+  <script src="./patterns.js"></script>
+  <script src="./index.js"></script>
+</body>
+
+</html>
