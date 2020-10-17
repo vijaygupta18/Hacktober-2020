@@ -3,18 +3,17 @@
         <link rel="stylesheet" href="styles.css">
       </head>
   <body id="background">
- 
    <div class="container">
     <h1 id="title">AIR TRAVEL FEEDBACK</h1>
     <p id="description">Thank you for choosing our airlines, we hope to serve you again!</p>
-    
     <form id="survey-form">
       <label id="name-label" for="name"><b>Name</b></label><br/>
     <input type="text" id="name" placeholder="Enter your name" required>
     <br/><br/>
     <label id="email-label" for="email"><b>E-mail</b></label><br/>
     <input type="email" id="email" placeholder="Enter your e-mail" required pattern=".+@.+.com"
-          title="Please provide proper e-mail address">
+          title="Enter e-mail address">
+        <span class=invalid-feedback">Please Enter valid email</span>
     <br/><br/>
       <label id="number-label" for="number"><b>Age</b></label><br/>
       <input type="number" id="number" placeholder="Enter your Age" min="1" max="75" required title="Please enter a proper number within range">
@@ -27,8 +26,6 @@
   <input type="radio" id="other" name="gender" value="other">
   <label for="other">Other</label>
        <br/><br/>
-      
-      
       <label for="dropdown"><b>Select Flying Class</b></label>
 <select id="dropdown" placeholder="Flying Class">
   <option value="" selected disabled hidden>Choose from dropdown list</option>
@@ -85,7 +82,7 @@
  <br/><br/>
       <button type="submit" id="submit" form="survey-form" value="Submit">Submit Feedback</button>
      </div>
-    </form>
+</form>
 <br/><br/>  
 <footer>A freeCodeCamp project by <a id="AS" href="https://codepen.io/ananya2407">Ananya Sajwan</a></footer>
 </body>
