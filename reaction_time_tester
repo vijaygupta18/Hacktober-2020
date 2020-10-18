@@ -1,0 +1,122 @@
+<!doctype html>
+<html>
+<head>
+    <title>My Example Domain</title>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    
+    <style type="text/css" >
+       
+        #box{
+        
+         border-radius: 0px;
+           height: 200px;
+           width: 200px;
+           background-color: red;
+           position: relative;
+           display:none;
+        }
+        
+    
+    </style>
+    
+    
+</head>
+    
+    <body>
+    
+        <h1>Check your Reaction Skills !!</h1>
+        <h5>Click on the objects as fast as you can!!</h5>
+        <div ><bold>Your Reaction Time</bold></div>
+        <div id="result">0</div>
+        <button id="finish">Finish Game</button>
+        <br/><br/>
+        <div id="box"></div>
+        
+        
+         <script type="text/javascript">
+             
+             var clickedTime;
+             var createdTime;
+             
+             function getRandomColor() {
+                      var letters = '0123456789ABCDEF';
+                      var color = '#';
+                      for (var i = 0; i < 6; i++) {
+                      color += letters[Math.floor(Math.random() * 16)];
+                      }
+                      return color;
+             }
+
+           //  var best=4;      // TRY TO ALERT THE BEST ATTEMPT AFTER CLICKING FINISH....!!!
+         
+             
+             function makeBox(){
+                 var time=Math.random();
+                  time=1000*time;
+             
+               
+                 setTimeout(function(){
+                       var top=250*Math.random();
+                       var left=900*Math.random();
+                     
+                        if(Math.random()>0.5)
+                            {
+                                 document.getElementById("box").style.borderRadius="100px";
+                            }
+                        else{
+                            document.getElementById("box").style.borderRadius="0";
+                        }
+                     
+                       document.getElementById("box").style.display="block";
+                       document.getElementById("box").style.backgroundColor=getRandomColor();
+                       document.getElementById("box").style.top=top+"px";
+                       document.getElementById("box").style.left=left+"px";
+                       
+                     
+                       createdTime=Date.now();
+                     
+                  },time);
+         
+             }
+             
+        var att=[5,6];
+         
+         document.getElementById("box").onclick=function(){
+             
+              clickedTime=Date.now();
+             
+       //       att.push(((clickedTime-createdTime)/1000));
+              this.style.display="none";
+              makeBox();
+        
+          
+             document.getElementById("result").innerHTML=((clickedTime-createdTime)/1000)+"s";
+            
+            
+       }
+           
+             
+           makeBox();
+        
+         
+           document.getElementById("finish").onclick=function(){
+               
+               function myFunction() {
+                   att.sort(function(a, b){return a - b});
+                   
+               }
+                alert("Your best attempt is : "+att[0]);
+        
+           }
+         
+        
+           
+         </script>
+    
+    
+    </body>
+
+</html> 
