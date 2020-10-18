@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Covid-19</title>
+</head>
+
+<body>
+
+    <header>
+        <app-bar></app-bar>
+    </header>
+    
+    <main>
+        <div class="row text-center align-center justify-center">
+            <div class="col col-12">
+                <h2>Global Cases</h2>
+                <h5 id="globalLastUpdate"> </h5>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 col-md-4 col-sm-12">
+                        <div class="card-box bg-blue">
+                            <div class="inner">
+                                <h3 id="globalConfirmed"> </h3>
+                                <h4> Confirmed </h4>
+                            </div>
+                            <div class="icon">
+                                <i class="fa fa-ambulance" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-12">
+                        <div class="card-box bg-green">
+                            <div class="inner">
+                                <h3 id="globalRecovered"> </h3>
+                                <h4> Recovered </h4>
+                            </div>
+                            <div class="icon">
+                                <i class="fa fa-user-plus" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-12">
+                        <div class="card-box bg-red">
+                            <div class="inner">
+                                <h3 id="globalDeath"> </h3>
+                                <h4> Death </h4>
+                            </div>
+                            <div class="icon">
+                                <i class="fa fa-heartbeat" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="row text-center align-center justify-center">
+            <div class="col col-12">
+                <br>
+                <h2>Search Case by Country</h2>
+            </div>
+        </div>
+        <search-bar></search-bar>
+        <h2 class="text-center" id="countrySearch"></h2>
+        <br>
+        <country-list></country-list>
+
+
+        <div class="row text-center align-center justify-center">
+            <div class="col col-12">
+                <br>
+                <h2>Indonesia Cases</h2>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 col-md-6 col-sm-12">
+                        <div class="card">
+                            <div class="inner">
+                                <h3 id="indonesiaConfirmed" class="blue"> </h3>
+                                <h4> Confirmed </h4>
+                            </div>
+                            <div class="icon">
+                                <i class="fa fa-ambulance blue" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12">
+                        <div class="card">
+                            <div class="inner">
+                                <h3 id="indonesiaActive" class="orange"> </h3>
+                                <h4> Active Case </h4>
+                            </div>
+                            <div class="icon">
+                                <i class="fa fa-exclamation-triangle orange" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12">
+                        <div class="card">
+                            <div class="inner">
+                                <h3 id="indonesiaRecovered" class="green"> </h3>
+                                <h4> Recovered </h4>
+                            </div>
+                            <div class="icon">
+                                <i class="fa fa-user-plus green" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12">
+                        <div class="card">
+                            <div class="inner">
+                                <h3 id="indonesiaDeath" class="red"> </h3>
+                                <h4> Death </h4>
+                            </div>
+                            <div class="icon">
+                                <i class="fa fa-heartbeat red" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="row text-center align-center justify-center">
+            <div class="col col-12">
+                <br>
+                <h2>All Indonesia Cases by Province</h2>
+                <br>
+            </div>
+            <div class="container">
+            <table class="table table-bordered card-box">
+                <thead>
+                    <tr>
+                        <th scope="col">Province</th>
+                        <th scope="col">Confirmed</th>
+                        <th scope="col">Recovered</th>
+                        <th scope="col">Death</th>
+                    </tr>
+                </thead>
+                <tbody id="list-provinsi">
+                </tbody>
+            </table>
+        </div>
+        </div>
+    </main>
+</body>
+
+</html>
