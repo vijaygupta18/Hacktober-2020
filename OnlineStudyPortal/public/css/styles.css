@@ -1,0 +1,445 @@
+
+
+
+nav.navbar{
+  position: fixed;
+  width: 100%;
+  top: 0;
+}
+
+body.background-img{
+  background-image: url("/images/background.jpg");
+}
+
+footer{
+  background-color: white;
+  padding: 2rem;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+
+div.assignments-panel{
+  height: 15rem;
+  width: 20rem;
+}
+
+.h1{
+  font-size: 2rem;
+  font-weight: bold;
+  color: grey !important;
+  background-color: white !important;
+}
+
+.footer{
+  font-size: 1.3rem;
+  position: absolute;
+  right: 20px;
+  bottom: 11px;
+}
+
+
+.login{
+
+background: white;
+height: 25rem;
+width: 50%;
+padding: 2rem;
+margin: 12% auto;
+border-radius: 10px;
+
+}
+.login-elements{
+  display: block;
+  margin: 5% auto;
+  width: 30rem;
+}
+.login-input{
+  border: none;
+  border-bottom: 2px solid black;
+  font-size: 1.5rem;
+  padding: 1rem;
+}
+.facebook{
+  color : midnightblue;
+  font-size: 2rem;
+  position: absolute;
+  left : 5rem;
+  top: 14rem;
+}
+
+.twitter{
+  color : midnightblue;
+  font-size: 2rem;
+  position: absolute;
+  left : 5rem;
+  top: 24rem;
+}
+
+.instagram{
+  color : midnightblue;
+  font-size: 2rem;
+  position: absolute;
+  left : 5rem;
+  top: 34rem;
+}
+
+.shadow {
+  -webkit-box-shadow: 3px 3px 5px 6px #ccc;
+  -moz-box-shadow:    3px 3px 5px 6px #ccc;
+  box-shadow:         3px 3px 5px 6px #ccc;
+}
+
+.navbar-button-1{
+  position:absolute;
+  right:11%;
+  top:18%;
+}
+.navbar-button-2{
+  right:2%;
+  top:2%;
+}
+
+
+.navbar2{
+ background-color: #2680EB;
+ height: 4rem;
+ width: 100%;
+ padding-top: 0.6%;
+ position: fixed;
+ top:4.62rem;
+}
+
+a.navbar-2-link{
+  text-decoration: inherit;
+  color: white;
+  margin: 1.4%;
+  font-size: 1.6rem;
+}
+
+.navbar-2-link:hover{
+  color: #FFDF00;
+
+}
+a.active{
+  color: #FFDF00;
+  border-bottom: 4px solid #FFDF00;
+  padding-bottom: 0.8%;
+}
+
+.container-fluid{
+  margin-top: 9rem;
+}
+.lessons-panel{
+
+  margin:2% 1%;
+  display: inline-block;
+  height: 13rem;
+  width: 17rem;
+  border-radius: 40px;
+  text-align: left;
+  padding:1%;
+  }
+
+  div.lessons-panel:hover{
+    -webkit-box-shadow: 5px 5px 5px 5px #ccc;
+    -moz-box-shadow:    5px 5px 5px 5px #ccc;
+    box-shadow:         5px 5px 5px 5px #ccc;
+  }
+
+  .lessons-row{
+    text-align: center;
+  }
+  .l-green{
+    background-image: linear-gradient(to bottom  right, #1D976B, #9DD138);
+  }
+  .l-blue{
+    background-image: linear-gradient(to bottom right, #4E90DB, #39A5FB);
+  }
+  .l-skyblue{
+    background-image: linear-gradient(to bottom right,#20C7C3 ,#B2F7F5);
+  }
+  .l-purple{
+     background-image: linear-gradient(to bottom right, #B78AFA,#D5A6E2);
+  }
+  .l-red{
+    background-image: linear-gradient(to bottom right, #F1424F, #F67E78);
+  }
+  .l-lightorange{
+    background-image: linear-gradient(to bottom right, #F8A3AC, #FCDC88);
+  }
+  .l-orange{
+     background-image: linear-gradient(to bottom right, #FF690A, #FD8F40);
+  }
+  .l-lightblue{
+    background-image: linear-gradient(to bottom right, #2375D3, #67D0E8)
+  }
+
+
+.panel-heading{
+  color: white;
+  font-size: 2rem;
+  font-weight: bold;
+  margin-top: 1rem;
+}
+.percentage{
+  background-color: rgba(255, 255, 255, 0.4);
+  height:1.4rem;
+  width: 70%;
+  border-radius: 15px;
+  margin-top: 1rem;
+  display: inline-block;
+}
+.percentage-bar{
+  background-color: white;
+  width: 66%;
+  height: 100%;
+  border-radius: 15px 0 0 15px;
+}
+
+.white{
+  color: white;
+  margin-top: 1.3rem;
+}
+
+.percentage-number{
+  color: white;
+  display: inline;
+  margin-left: 6%;
+  font-size: 1.5rem;
+
+
+
+}
+
+.question{
+  -webkit-box-shadow: 5px 5px 5px 5px #ccc;
+  -moz-box-shadow:    5px 5px 5px 5px #ccc;
+  box-shadow:         5px 5px 5px 5px #ccc;
+  height: 27rem;
+  width:60%;
+  margin: 3%;
+  text-align: left;
+  padding: 2%;
+  background-color: white;
+
+}
+.radio{
+  display: inline-block;
+}
+
+.options{
+  display: inline-block;
+  font-size: 1.5rem;
+}
+
+.quizButton{
+
+  margin: 2rem 0 5rem 41.8%;
+  width: 200px;
+  height: 4rem;
+  font-size: 2rem;
+
+}
+
+.test-header{
+  padding: 10% 6% 1% 6%;
+  width: 100%;
+  height: 8rem;
+  background-color: white;
+}
+
+.grey{
+  background-color: #F7F7F7;
+  padding-top: 2%;
+}
+
+.result-popup{
+  margin-top: 10%;
+  height: 30rem;;
+  width: 70%;
+  background-color: white;
+}
+.first-result{
+  height: 25%;
+  width: 100%;
+  text-align: left;
+  padding: 2%;
+}
+.second-result{
+  height: 50%;
+  width: 100%;
+  background-color: #EEF3FF;
+}
+.third-result{
+  height: 25%;
+  width: 100%;
+  padding: 4%;
+  text-align: right;
+}
+
+.percentage-result{
+  color:red;
+  font-size: 2rem;
+  margin-left: 29rem;
+}
+
+.inb{
+  display: inline;
+}
+
+.check-answer{
+  margin-right: 2rem;
+}
+
+.result-summary{
+  font-size: 2rem;
+  line-height: 2;
+}
+
+.subject-header{
+  width: 100%;
+  height: 15rem;
+  margin-top: 7%;
+  padding: 3%;
+  background-image: linear-gradient(to left,lightgray,white)
+}
+
+ .subject-row{
+   text-align:left;
+ }
+.subject-panel{
+  width: 15rem;
+  height: 13rem;
+  margin-top: 2rem;
+  text-align: center;
+  padding: 2%;
+}
+
+.chapter-name{
+  color: #2680EB;
+  margin: 1%;
+}
+
+.bottom{
+  margin-bottom: 5%;
+}
+
+.l-test{
+  background-image: linear-gradient(to top right,#F0A3B6,#FCE584);
+}
+
+
+.computer-svg{
+  height: 5rem;
+  width: 5rem;
+  margin-bottom: 10%;
+}
+
+.no-style{
+  text-decoration: none;
+  color: black;
+}
+
+.no-style:hover{
+  color: black;
+}
+
+.timer{
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-left: 75%;
+}
+
+
+.atimer{
+  color:white;
+  font-weight: bold;
+  padding: 9%;
+
+}
+
+.yvideo{
+  margin-top:2%;
+  border-radius: 20px;
+}
+
+
+
+  .ib{
+    display: inline-block;
+  }
+
+  .iframe{
+    margin-top: 10%;
+    margin-left: 1%;
+  }
+
+  .video-name{
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 15%;
+    margin-left: 1%;
+  }
+
+.marginminus{
+  margin-top: 10%;
+}
+
+
+
+@media only screen and (max-width : 700px){
+  .login{
+
+  background: white;
+  height: 38rem;
+  width: 100%;
+  padding: 2rem;
+  padding-top: 9rem;
+  margin: 0;
+  border-radius: 10px;
+
+  }
+  .login-elements{
+    display: block;
+    margin: 10% auto;
+    width: 100%;
+  }
+  .login-input{
+    border: none;
+    border-bottom: 2px solid black;
+    font-size: 1.2rem;
+    padding: 1rem;
+  }
+  .facebook{
+    color : midnightblue;
+    font-size: 2rem;
+    display: none;
+    bottom: 0;
+  }
+
+  .twitter{
+    color : midnightblue;
+    font-size: 2rem;
+    position: fixed;
+    display: none;
+    bottom: 0;
+    }
+
+  .instagram{
+    color : midnightblue;
+    font-size: 2rem;
+    position: absolute;
+    display: none;
+    bottom: 0;
+  }
+
+  .navbar-brand{
+    font-size: 20px;
+  }
+
+  body.background-img{
+    background-color: white;
+  }
+}

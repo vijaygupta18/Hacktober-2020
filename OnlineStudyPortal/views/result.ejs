@@ -1,0 +1,29 @@
+<%-include("partials/header")-%>
+<div class="container-fluid">
+<center>
+  <div class="result-popup shadow">
+    <div class="first-result">
+      <h1 class="inb">Practice Test completed</h1>
+      <p class="inb percentage-result"><%=result/4*100%>%</p>
+      <p>Congratulations! You have scored <%=result/4*100%>% in this test.</p>
+
+    </div>
+    <div class="second-result">
+      <p class="result-summary">Correct Answers: <%=result%></p>
+      <p class="result-summary">Wrong Answers: <%=4-result%></p>
+      <p class="result-summary">Total Marks: <%=result*10%>/40</p>
+   </div>
+
+    <div class="third-result">
+       <button class="check-answer btn btn-lg btn-primary" type="button" name="button">Check Answers</button>
+       <a href="/lessons/mathematics"><button class="btn btn-lg btn-outline-primary" type="button" name="button">Exit</button></a>
+  </div>
+
+  </div>
+  </center>
+</div>
+<div class="bottom">
+
+</div>
+
+<%-include("partials/footer")-%>
