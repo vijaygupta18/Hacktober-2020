@@ -7,8 +7,10 @@
 <br><br>
 This project deals with the stock price prediction using python3 and machine learning techniques particularly dealing with stocks of Netflix(2015 - 2019).
 <br>
-# How to run the code
-1) Download / clone the code. Open the notebook in either the jupyter notebook or python IDEs like sypder and simply run it. Don't worry about the dataset. It is already referenced to the uploaded data. 
+### How to run the code
+``
+Download / clone the code. Open the notebook in either the jupyter notebook or python IDEs like sypder and simply run it. Don't worry about the dataset. It is already referenced to the uploaded data. 
+``
 <br>Your suggestions and feedbacks would be appreciated. 
 If looking out to collaborate in Kaggle competition, ping me on [Kaggle](https://www.kaggle.com/kushshah95). 
 <br>
