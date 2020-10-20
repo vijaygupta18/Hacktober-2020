@@ -1,0 +1,25 @@
+.main-table{
+  width: 100%;
+  color: limegreen;
+  font-size:2rem;
+  font-family: 'Comic Neue', cursive;
+  font-weight: bold;
+  border-collapse: collapse;
+
+}
+td{
+  border: 1px solid orange;
+  padding: 1%;
+}
+th{
+  color: orangered;
+  border: 1px solid orange;
+  padding: 1%;
+}
+body{
+background-color: black;
+}
+tr:last-child{
+  color: orangered;
+  font-size: 3rem;
+}
