@@ -1,0 +1,54 @@
+<%- include("partials/header") -%>
+<div class="test-header">
+  <h3 class="inb">Chapter Name</h3>
+<div class=" inb timer">
+  <span>Time left- </span>
+  <span class="minutes">1</span>
+  <span>:</span>
+  <span class="seconds">00</span>
+</div>
+
+  <h1>Name of the test</h1>
+
+
+</div>
+
+<div class="container-fluid grey">
+
+<form class="quizForm" action="/lessons/mathematics/test" method="post">
+  <%let number =1%>
+  <% Questions.forEach((ques)=>{ %>
+
+    <center>
+      <div class="question">
+        <p class="options">Ques.<%=number%>  <%=ques.ques%></p>
+        <hr>
+        <input class = "radio" type="radio" name=<%=ques._id%> value="<%=ques.a%>">
+        <p class="options"><%=ques.a%></p>
+        <hr>
+        <input class = "radio" type="radio" name=<%=ques._id%> value="<%=ques.b%>">
+        <p class="options"><%=ques.b%></p>
+        <hr>
+        <input class = "radio" type="radio" name=<%=ques._id%> value="<%=ques.c%>">
+        <p class="options"><%=ques.c%></p>
+        <hr>
+        <input class = "radio" type="radio" name=<%=ques._id%> value="<%=ques.d%>">
+        <p class="options"><%=ques.d%></p>
+      </div>
+    </center>
+
+
+
+  <%number++%>
+
+
+  <%});%>
+
+  <button class="btn btn-lg btn-danger quizButton" type="submit" name="submitQuiz">Submit</button>
+
+</form>
+
+</div>
+
+<script src="\scripts\index2.js" charset="utf-8"></script>
+<%- include("partials/footer") -%>

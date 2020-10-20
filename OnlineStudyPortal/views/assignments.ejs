@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>DUMMY</title>
+  <!-- CSS only -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+  <!-- JS, Popper.js, and jQuery -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
+  <!-- Font awesome -->
+  <script src="https://kit.fontawesome.com/7e6867c6ce.js" crossorigin="anonymous"></script>
+  <!-- local css file -->
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+
+<body class ="assignments">
+  <nav class="navbar navbar-light bg-light">
+    <span class="navbar-brand mb-0 h1">DUMMY WEBSITE NAME</span>
+    <a href="/"><button class ="navbar-button-1 btn btn-lg btn-outline-primary" type="submit" name="signOut">Log out</button></a>
+    <button class="navbar-button-2 btn btn-lg btn-outline-primary" type="button" name="class">Select Class</button>
+  </nav>
+ <div class="navbar2">
+   <a class = "navbar-2-link" href="/lessons">Lessons</a>
+   <a class = "navbar-2-link active" href="/assignments">Assignment</a>
+   <a class = "navbar-2-link" href="">Live Streaming</a>
+ </div>
+
+
+ <div class="container-fluid">
+   <div class="lessons-row">
+   <div class="telegu lessons-panel assignments-panel" onclick="location.href='/lessons/mathematics';">
+     <p class="panel-heading">TELEGU</p>
+     <p class ="white" >12-Videos | 2-Exams | 4-Chapters</p>
+     <div class="percentage"><div class="percentage-bar"></div></div>
+     <p class ="percentage-number" >66%</p>
+     <br>
+     <div class="inb atimer">
+       <span class="days-telegu"></span>
+       <span class="hours-telegu"></span>
+       <span class="min-telegu"></span>
+       <span class="sec-telegu"></span>
+     </div>
+   </div>
+   <div class=" hindi lessons-panel assignments-panel" onclick="location.href='/lessons/mathematics';">
+     <p class="panel-heading">HINDI</p>
+     <p class ="white" >12-Videos | 2-Exams | 4-Chapters</p>
+     <div class="percentage"><div class="percentage-bar"></div></div>
+     <p class ="percentage-number" >66%</p>
+     <div class="inb atimer">
+       <span class="days-hindi"></span>
+       <span class="hours-hindi"></span>
+       <span class="min-hindi"></span>
+       <span class="sec-hindi"></span>
+     </div>
+   </div>
+   </div>
+
+       <div class="lessons-row">
+         <div class="science lessons-panel assignments-panel" onclick="location.href='/lessons/mathematics';">
+           <p class="panel-heading">SCIENCE</p>
+           <p class ="white" >12-Videos | 2-Exams | 4-Chapters</p>
+           <div class="percentage"><div class="percentage-bar"></div></div>
+           <p class ="percentage-number" >66%</p>
+           <div class="inb atimer">
+             <span class="days-science"></span>
+             <span class="hours-science"></span>
+             <span class="min-science"></span>
+             <span class="sec-science"></span>
+           </div>
+         </div>
+         <div class="biology lessons-panel assignments-panel" onclick="location.href='/lessons/mathematics';">
+           <p class="panel-heading">BIOLOGY</p>
+           <p class ="white" >12-Videos | 2-Exams | 4-Chapters</p>
+           <div class="percentage"><div class="percentage-bar"></div></div>
+           <p class ="percentage-number" >66%</p>
+           <div class="inb atimer">
+             <span class="days-biology"></span>
+             <span class="hours-biology"></span>
+             <span class="min-biology"></span>
+             <span class="sec-biology"></span>
+           </div>
+         </div>
+
+       </div>
+   </div>
+
+<div class="bottom">
+
+</div>
+
+
+<script src="\scripts\index.js" charset="utf-8"></script>
+
+<%-include("partials/footer")-%>
