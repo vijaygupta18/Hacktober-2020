@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
+//doing this for t-shirt
 Created on Sun Feb 23 10:53:44 2020
 
 @author: kaydee
