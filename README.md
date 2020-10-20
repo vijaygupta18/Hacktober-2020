@@ -2,9 +2,9 @@
 
 ## This repository is for collecting the different projects made by people who wants to contribute in open source.
 
-## Follow the steps below so know about Pull request and how to create request
+ Follow the steps below to know about Pull request and how to create request
 
-## Give a star 🌟. Get your projects merged quickly on valid pull requests.
+ Give a star 🌟. Get your projects merged quickly on valid pull requests.
 ## Happy coding
 
 - Anyone can add any type of valid html-css web page depends on you.
