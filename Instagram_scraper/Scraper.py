@@ -1,6 +1,6 @@
 import requests
 import sys
-
+#doing this for t-shirt
 def Instagram(username):
   r = requests.get("https://www.instagram.com/"+ username +"/?__a=1")
   if r.status_code == 200:
