@@ -1,0 +1,16 @@
+def count(lst):
+    greater_than_5=0
+
+    for i in lst:
+        if len(i)>5:
+            greater_than_5+=1
+
+    return greater_than_5
+
+lst = []
+n = int(input('enter number of names :'))
+for i in range(n):
+    name = input()
+    lst.append(name)
+
+names = count(lst)
