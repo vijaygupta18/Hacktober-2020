@@ -1,0 +1,44 @@
+.grid {
+    width: 650px;
+    height: 650px;
+    display: grid;
+    grid-template-columns: repeat(16, 1fr);
+    grid-template-rows: repeat(16, 1fr);
+    background-color: white;
+    margin: auto;
+}
+
+.grid > div {
+    border: .3px solid #cccccc;
+}
+
+body{
+    background-color: lightblue;
+}
+
+.controls{
+    display: flex;
+    justify-content: space-around;
+    width: 315px;
+    margin-bottom: 20px;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.app {
+    height: 100%;
+    width: 100%;
+}
+
+h3 {
+    margin: 0 0 10 0;
+}
+
+[class*='-btn'] {
+    border-radius: 5px;
+}
