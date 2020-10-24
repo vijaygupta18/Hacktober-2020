@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Calculator</title>
+  <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto:100,400'><link rel="stylesheet" href="./style.css">
+</head>
+<body>
+<h1 class="head">CALCULATOR</h1>
+<div class="calculator" ng-app="CalculatorApplication" ng-controller="CalculatorController">
+			  <input type="text" class="display" ng-model="display" readonly></input>
+			  <div class="buttons">
+				    <div class="row">
+					      <button class="button top" ng-click="clear()">AC</button>
+					      <button class="button top" ng-click="sign()">
+						        <sup>&plus;</sup>/<sub>&minus;</sub>
+					      </button>
+					      <button class="button top" ng-click="percent()">%</button>
+					      <button class="button operator" ng-click="setOperator('/')">&divide;</button>
+	    </div>
+				    <div class="row">
+					      <button class="button" ng-click="number(7)">7</button>
+					      <button class="button" ng-click="number(8)">8</button>
+					      <button class="button" ng-click="number(9)">9</button>
+					      <button class="button operator" ng-click="setOperator('*')">&times;</button>
+				    </div>
+				    <div class="row">
+					      <button class="button" ng-click="number(4)">4</button>
+					      <button class="button" ng-click="number(5)">5</button>
+					      <button class="button" ng-click="number(6)">6</button>
+      					<button class="button operator" ng-click="setOperator('-')">&minus;</button>
+				    </div>
+				    <div class="row">
+					      <button class="button" ng-click="number(1)">1</button>
+					      <button class="button" ng-click="number(2)">2</button>
+      					<button class="button" ng-click="number(3)">3</button>
+					      <button class="button operator" ng-click="setOperator('+')">&plus;</button>
+				    </div>
+				    <div class="row">
+      					<button class="button double" ng-click="number(0)">0</button>
+					      <button class="button decimal" ng-click="number('.')">.</button>
+					      <button class="button operator equal" ng-click="setOperator('=')">&equals;</button>
+				    </div>
+			  </div>
+		</div>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.8/angular.min.js'></script><script  src="./script.js"></script>
+</body>
+</html>
