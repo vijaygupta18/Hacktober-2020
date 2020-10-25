@@ -1,0 +1,88 @@
+body {
+	background-image: url('/half-moon.jpg'); 
+	background-size: cover;
+}
+.head {
+     font-family: 'Roboto', Helvetica, sans-serif;
+  margin: auto;
+  font-size: 30px;
+  color: #555;
+  text-align: center;
+}
+button:focus {
+	outline: 0;
+}
+.calulator,
+.display,
+.button {
+	cursor: pointer;
+}
+.display,
+.button {
+	font-family: 'Roboto', Helvetica, sans-serif;
+  font-weight: 100;
+  border: 0;
+}
+.calculator {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	margin: auto;
+	height: 316px;
+	width: 228px;
+	background: #000000;
+	opacity: 0.5;
+}
+.display {
+	box-sizing: border-box;
+	display: block;
+	width: inherit;
+	margin-top: 28px;
+	padding: 0 10px;
+	background: #000000;
+  color: #FFFFFF;
+  font-size: 45px;
+  text-align: right;
+}
+.button {
+	height: 47px;
+	width: 57px;
+	float: left;
+	padding: 2px 0 3px 0;
+	background: #000000;
+	color: #FFFFFF;
+  font-size: 22px;
+}
+.button:active {
+	background: #A9A9A9;
+}
+.top {
+	background: #000000;
+}
+.top:active {
+	background: #A9A9A9;
+}
+.operator {
+	background: #000000;
+	color: #FFFFFF;
+	font-size: 28px;
+}
+.operator:active {
+	background: #A9A9A9;
+}
+.decimal {
+	font-weight: 400;
+}
+.calculator {
+	border-radius: 6px;
+}
+.equal {
+	border-bottom-right-radius: 6px;
+}
+.double {
+	width: 114px;
+	border-bottom-left-radius: 6px;
+}
+
