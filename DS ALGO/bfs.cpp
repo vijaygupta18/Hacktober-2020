@@ -1,4 +1,6 @@
- void bfs(vector<int> &lvl, int root)
+#include <bits/stdc++.h>
+using namespace std;
+void bfs(vector<int> &lvl, int root)
  { queue<int> q;
    vector<int> used(n+1);
    q.push(root);
@@ -16,3 +18,15 @@
 	        }
      }
  }
+
+int main(){
+int root;
+int n;
+cin >> n;
+	vector <int> v(n);
+	for(int i=0;i<n;i++) cin >> v[i];
+	cin >> root;
+	dfs(v,root );
+		
+	
+}
