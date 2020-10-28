@@ -1,10 +1,10 @@
-#include <stdio.h> 
 #include <conio.h> 
 #include <string.h> 
-#include <math.h> 
-#include <time.h> 
 #include <graphics.h> 
 #include <dos.h>
+#include <bits/stdc++.h>
+
+using namespace std;
 
 void minSecCalc(int xrad, int midx, int midy, int x[60], int y[60]) {
  
