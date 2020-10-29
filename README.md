@@ -2,10 +2,7 @@
 
 ## This repository is for collecting the different projects made by people who wants to contribute in open source.
 
- Follow the steps below to know about Pull request and how to create request
 
- Give a star 🌟. Get your projects merged quickly on valid pull requests.
-## Happy coding
 
 - Anyone can add any type of valid html-css web page depends on you.
 
@@ -33,10 +30,10 @@ Now clone the forked repository to your system. Go to your GitHub account, open 
 
 *if you want to use the terminal, use the following commands*
 after you fork the repository , open the terminal type the given command
-``
+```
 git clone https://github.com/{your-github-username}/Hacktober-2020.git
 
-``
+```
 
 # Create a branch
 
