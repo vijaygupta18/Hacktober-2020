@@ -20,7 +20,7 @@
 
 
  
-## - `Steps To Generate PR(Pull Request)`
+##  `Steps To Generate PR(Pull Request)`
 
 
 
