@@ -17,6 +17,121 @@
 <body>
     <div id="app" class="container">
         <div class="row">
+            <div class="col">
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                        <label class="input-group-text" for="the-day">วัน</label>
+                    </div>
+                    <select class="custom-select" id="the-day">
+                        <option selected>Choose...</option>
+                        <option value="1">อาทิตย์</option>
+                        <option value="2">จันทร์</option>
+                        <option value="3">อังคาร</option>
+                        <option value="4">พุธ</option>
+                        <option value="5">พฤหัสบดี</option>
+                        <option value="6">ศุกร์</option>
+                        <option value="7">เสาร์</option>
+                    </select>
+                </div>
+            </div>
+            <div class="col">
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                        <label class="input-group-text" for="day">วันที่</label>
+                    </div>
+                    <select class="custom-select" id="day">
+                        <option selected>Choose...</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                        <option value="11">11</option>
+                        <option value="12">12</option>
+                        <option value="13">13</option>
+                        <option value="14">14</option>
+                        <option value="15">15</option>
+                        <option value="16">16</option>
+                        <option value="17">17</option>
+                        <option value="18">18</option>
+                        <option value="19">19</option>
+                        <option value="20">20</option>
+                        <option value="21">21</option>
+                        <option value="22">22</option>
+                        <option value="23">23</option>
+                        <option value="24">24</option>
+                        <option value="25">25</option>
+                        <option value="26">26</option>
+                        <option value="27">27</option>
+                        <option value="28">28</option>
+                        <option value="29">29</option>
+                        <option value="30">30</option>
+                        <option value="31">31</option>
+                    </select>
+                </div>
+            </div>
+            <div class="col">
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                        <label class="input-group-text" for="month">เดือน</label>
+                    </div>
+                    <select class="custom-select" id="month">
+                        <option selected>Choose...</option>
+                        <option value="2">มกราคม</option>
+                        <option value="3">กุมภาพันธ์</option>
+                        <option value="4">มีนาคม</option>
+                        <option value="5">เมษายน</option>
+                        <option value="6">พฤษภาคม</option>
+                        <option value="7">มิถุนายน</option>
+                        <option value="8">กรกฎาคม</option>
+                        <option value="9">สิงหาคม</option>
+                        <option value="10">กันยายน</option>
+                        <option value="11">ตุลาคม</option>
+                        <option value="12">พฤศจิกายน</option>
+                        <option value="1">ธันวาคม</option>
+                    </select>
+                </div>
+            </div>
+            <div class="col">
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                        <label class="input-group-text" for="year">ปี</label>
+                    </div>
+                    <select class="custom-select" id="year">
+                        <option selected>Choose...</option>
+                        <option value="1">ชวด</option>
+                        <option value="2">ฉลู</option>
+                        <option value="3">ขาล</option>
+                        <option value="4">เถาะ</option>
+                        <option value="5">มะโรง</option>
+                        <option value="6">มะเส็ง</option>
+                        <option value="7">มะเมีย</option>
+                        <option value="8">มะแม</option>
+                        <option value="9">วอก</option>
+                        <option value="10">ระกา</option>
+                        <option value="11">จอ</option>
+                        <option value="12">กุน</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <div id="display-zone" class="row collapse">
+            <div class="col text-center">
+                คุณเกิดวัน<b><span id="display-the-day"></span></b> ที่ <b><span id="display-day"></span></b>  
+                เดือน<b><span id="display-month"></span></b> ปี <b><span id="display-year"></span></b>
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <button id="fortune-btn" type="button" class="btn btn-success btn-lg btn-block">เริ่มการทำนาย</button>
+        </div>
+        <br>
+        <div class="row">
             <div class="col-2 heading odd">ฐานที่ 1</div>
             <div class="col-10">
                 <div class="row">
@@ -29,13 +144,13 @@
                     <div class="col sub-heading">มัชฌิมา</div>
                 </div>
                 <div class="row">
-                    <div id="00" class="col my-num">1</div>
-                    <div id="01" class="col my-num">2</div>
-                    <div id="02" class="col my-num">3</div>
-                    <div id="03" class="col my-num">4</div>
-                    <div id="04" class="col my-num">5</div>
-                    <div id="05" class="col my-num">6</div>
-                    <div id="06" class="col my-num">7</div>
+                    <div id="00" class="col my-num">x</div>
+                    <div id="01" class="col my-num">x</div>
+                    <div id="02" class="col my-num">x</div>
+                    <div id="03" class="col my-num">x</div>
+                    <div id="04" class="col my-num">x</div>
+                    <div id="05" class="col my-num">x</div>
+                    <div id="06" class="col my-num">x</div>
                 </div>
             </div>
         </div>
@@ -52,13 +167,13 @@
                     <div class="col sub-heading">ปัตตานิ</div>
                 </div>
                 <div class="row">
-                    <div id="10" class="col my-num">1</div>
-                    <div id="11" class="col my-num">2</div>
-                    <div id="12" class="col my-num">3</div>
-                    <div id="13" class="col my-num">4</div>
-                    <div id="14" class="col my-num">5</div>
-                    <div id="15" class="col my-num">6</div>
-                    <div id="16" class="col my-num">7</div>
+                    <div id="10" class="col my-num">x</div>
+                    <div id="11" class="col my-num">x</div>
+                    <div id="12" class="col my-num">x</div>
+                    <div id="13" class="col my-num">x</div>
+                    <div id="14" class="col my-num">x</div>
+                    <div id="15" class="col my-num">x</div>
+                    <div id="16" class="col my-num">x</div>
                 </div>
             </div>
         </div>
@@ -75,13 +190,13 @@
                     <div class="col sub-heading">ทาสี</div>
                 </div>
                 <div class="row">
-                    <div id="20" class="col my-num">1</div>
-                    <div id="21" class="col my-num">2</div>
-                    <div id="22" class="col my-num">3</div>
-                    <div id="23" class="col my-num">4</div>
-                    <div id="24" class="col my-num">5</div>
-                    <div id="25" class="col my-num">6</div>
-                    <div id="26" class="col my-num">7</div>
+                    <div id="20" class="col my-num">x</div>
+                    <div id="21" class="col my-num">x</div>
+                    <div id="22" class="col my-num">x</div>
+                    <div id="23" class="col my-num">x</div>
+                    <div id="24" class="col my-num">x</div>
+                    <div id="25" class="col my-num">x</div>
+                    <div id="26" class="col my-num">x</div>
                 </div>
             </div>
         </div>
@@ -89,13 +204,13 @@
             <div class="col-2 heading no-margin even">ฐานที่ 4</div>
             <div class="col-10">
                 <div class="row power-base">
-                    <div id="30" class="col my-num">1</div>
-                    <div id="31" class="col my-num">2</div>
-                    <div id="32" class="col my-num">3</div>
-                    <div id="33" class="col my-num">4</div>
-                    <div id="34" class="col my-num">5</div>
-                    <div id="35" class="col my-num">6</div>
-                    <div id="36" class="col my-num">7</div>
+                    <div id="30" class="col my-num">x</div>
+                    <div id="31" class="col my-num">x</div>
+                    <div id="32" class="col my-num">x</div>
+                    <div id="33" class="col my-num">x</div>
+                    <div id="34" class="col my-num">x</div>
+                    <div id="35" class="col my-num">x</div>
+                    <div id="36" class="col my-num">x</div>
                 </div>
             </div>
         </div>
@@ -103,13 +218,13 @@
             <div class="col-2 heading no-margin odd">ฐานที่ 5</div>
             <div class="col-10">
                 <div class="row">
-                    <div id="40" class="col my-num">1</div>
-                    <div id="41" class="col my-num">2</div>
-                    <div id="42" class="col my-num">3</div>
-                    <div id="43" class="col my-num">4</div>
-                    <div id="44" class="col my-num">5</div>
-                    <div id="45" class="col my-num">6</div>
-                    <div id="46" class="col my-num">7</div>
+                    <div id="40" class="col my-num">x</div>
+                    <div id="41" class="col my-num">x</div>
+                    <div id="42" class="col my-num">x</div>
+                    <div id="43" class="col my-num">x</div>
+                    <div id="44" class="col my-num">x</div>
+                    <div id="45" class="col my-num">x</div>
+                    <div id="46" class="col my-num">x</div>
                 </div>
             </div>
         </div>
@@ -117,13 +232,13 @@
             <div class="col-2 heading no-margin even">ฐานที่ 6</div>
             <div class="col-10">
                 <div class="row">
-                    <div id="50" class="col my-num">1</div>
-                    <div id="51" class="col my-num">2</div>
-                    <div id="52" class="col my-num">3</div>
-                    <div id="53" class="col my-num">4</div>
-                    <div id="54" class="col my-num">5</div>
-                    <div id="55" class="col my-num">6</div>
-                    <div id="56" class="col my-num">7</div>
+                    <div id="50" class="col my-num">x</div>
+                    <div id="51" class="col my-num">x</div>
+                    <div id="52" class="col my-num">x</div>
+                    <div id="53" class="col my-num">x</div>
+                    <div id="54" class="col my-num">x</div>
+                    <div id="55" class="col my-num">x</div>
+                    <div id="56" class="col my-num">x</div>
                 </div>
             </div>
         </div>
@@ -131,13 +246,13 @@
             <div class="col-2 heading no-margin odd">ฐานที่ 7</div>
             <div class="col-10">
                 <div class="row">
-                    <div id="60" class="col my-num">1</div>
-                    <div id="61" class="col my-num">2</div>
-                    <div id="62" class="col my-num">3</div>
-                    <div id="63" class="col my-num">4</div>
-                    <div id="64" class="col my-num">5</div>
-                    <div id="65" class="col my-num">6</div>
-                    <div id="66" class="col my-num">7</div>
+                    <div id="60" class="col my-num">x</div>
+                    <div id="61" class="col my-num">x</div>
+                    <div id="62" class="col my-num">x</div>
+                    <div id="63" class="col my-num">x</div>
+                    <div id="64" class="col my-num">x</div>
+                    <div id="65" class="col my-num">x</div>
+                    <div id="66" class="col my-num">x</div>
                 </div>
             </div>
         </div>
@@ -154,13 +269,13 @@
                     <div class="col sub-heading">อุปถัมภ์</div>
                 </div>
                 <div class="row">
-                    <div id="70" class="col my-num">1</div>
-                    <div id="71" class="col my-num">2</div>
-                    <div id="72" class="col my-num">3</div>
-                    <div id="73" class="col my-num">4</div>
-                    <div id="74" class="col my-num">5</div>
-                    <div id="75" class="col my-num">6</div>
-                    <div id="76" class="col my-num">7</div>
+                    <div id="70" class="col my-num">x</div>
+                    <div id="71" class="col my-num">x</div>
+                    <div id="72" class="col my-num">x</div>
+                    <div id="73" class="col my-num">x</div>
+                    <div id="74" class="col my-num">x</div>
+                    <div id="75" class="col my-num">x</div>
+                    <div id="76" class="col my-num">x</div>
                 </div>
             </div>
         </div>
@@ -177,16 +292,17 @@
                     <div class="col sub-heading">ภริยัง</div>
                 </div>
                 <div class="row">
-                    <div id="20" class="col my-num">1</div>
-                    <div id="21" class="col my-num">2</div>
-                    <div id="22" class="col my-num">3</div>
-                    <div id="23" class="col my-num">4</div>
-                    <div id="24" class="col my-num">5</div>
-                    <div id="25" class="col my-num">6</div>
-                    <div id="26" class="col my-num">7</div>
+                    <div id="80" class="col my-num">x</div>
+                    <div id="81" class="col my-num">x</div>
+                    <div id="82" class="col my-num">x</div>
+                    <div id="83" class="col my-num">x</div>
+                    <div id="84" class="col my-num">x</div>
+                    <div id="85" class="col my-num">x</div>
+                    <div id="86" class="col my-num">x</div>
                 </div>
             </div>
-        </div
+            <div class="debug"></div>
+        </div>
     </div>
     <!-- jQuery and JS bundle w/ Popper.js -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
