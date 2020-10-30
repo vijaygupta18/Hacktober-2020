@@ -1,0 +1,36 @@
+#app {
+    margin-top: 2em;
+    text-align: center;
+    font-size: 30px;
+}
+
+.heading {
+    padding-top: 0.7em;
+    font-weight: bold;
+}
+
+.odd {
+    background-color: #963CBD;
+    color: #FFF;
+}
+
+.even {
+    background-color: #FEAE51;
+}
+
+.underline {
+    border-bottom: 1px solid #FF6F6155;
+}
+
+.no-margin {
+    padding-top: 0;
+}
+
+.sub-heading {
+    color: #C5299B;
+    background-color: #FF6F6155;
+}
+
+.power-base {
+    background-color: #FEAE5177;
+}
